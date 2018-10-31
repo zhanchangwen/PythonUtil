@@ -39,22 +39,26 @@ def check_json_ergodic(obj,objStruct,prefix):
                     if isinstance(obj[item][0],dict):
                         if isinstance(objStruct[item],dict):
                             #print "ergodic test array:"+item
+                            i=0
                             for subitem in obj[item]:
                                 copyStruct=copy_json(objStruct[item])
-                                check_json_ergodic(subitem,copyStruct,prefix+item+'/')
+                                check_json_ergodic(subitem,copyStruct,prefix+item+'/'+str(i)+'/')
+                                i=i+1
                             del objStruct[item]
                             #print "ergodic test array:%s finished" % item
                         elif isinstance(objStruct[item],list) and len(objStruct[item])>0 and isinstance(objStruct[item][0],dict):
                             #print "ergodic test array:"+item
+                            i=0
                             for subitem in obj[item]:
                                 copyStruct=copy_json(objStruct[item][0])
-                                check_json_ergodic(subitem,copyStruct,prefix+item+'/')
+                                check_json_ergodic(subitem,copyStruct,prefix+item+'/'+str(i)+'/')
+                                i=i+1
                             del objStruct[item][0]
                             #print "ergodic test array:%s finished" % prefix+item
                         else:
                             print "无法递归测试数组"+prefix+item
                     else:
-                        print "%s 数组元素非对象为%s" % prefix+item
+                        print "%s 数组元素非对象为%s" % (prefix+item,type(obj[item][0]),)
                 else:
                     print item+"数组为空"
                 #del objStruct[item]

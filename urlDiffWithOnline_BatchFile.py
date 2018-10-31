@@ -5,6 +5,9 @@ import requests
 import re
 import sys
 
+exceptions=[]
+exceptions = ["channelrequestid", "signatureServer"]
+
 def json_compare(jsonA,jsonB,prefix):
     for item in jsonA:
 	if item in jsonB:
@@ -25,8 +28,8 @@ def json_compare(jsonA,jsonB,prefix):
                 json_compare(jsonA[item],jsonB[item],prefix+item+'/')
                 del jsonB[item]
             else:
-                if jsonA[item] != jsonB[item]:
-                    print "key内容不一致：\t"+prefix+item+"\t"+str(jsonA[item])+" != " + str(jsonB[item])
+                if jsonA[item] != jsonB[item] and (item not in exceptions):
+                        print "key内容不一致：\t"+prefix+item+"\t"+str(jsonA[item])+" != " + str(jsonB[item])
                 del jsonB[item]
         else:
             print "多下发字段：\t"+prefix+item+"\t"+"homeportal["+prefix+item+"] = "+str(jsonA[item])
@@ -43,7 +46,7 @@ def url_response_compare(urlA,urlB):
     json_compare(jsonA,jsonB,'/')
 
 def url_check(url):
-    urlB=url.replace('10.18.217.220','home-launcher.hismarttv.com')
+    urlB=url.replace('10.18.220.100','home-launcher.hismarttv.com')
     url_response_compare(url,urlB)
 
 if __name__ == '__main__':
@@ -58,6 +61,10 @@ if __name__ == '__main__':
     #url_response_compare(urlA,urlB)
     #url_check(urlA)
     if len(sys.argv)>1:
-        url_check(sys.argv[1])
+            with open(sys.argv[1]) as f:
+                for url in f.readlines():
+                    print("URL_Diff:"+url)
+                    url = url.strip('\n')
+                    url_check(url)
     else:
-        print "Expmple:\n"+sys.argv[0] + " " + url
+        print("Format: \npython urlDiffWithOnline.py URL.txt")

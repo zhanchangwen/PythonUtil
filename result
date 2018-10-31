@@ -1,0 +1,638 @@
+!!! /signatureServer字段未在sosoapi中录入
+!!! /sideBar/0/chanModifiedTime字段未在sosoapi中录入
+!!! /sideBar/0/vodChanType字段未在sosoapi中录入
+漏下发字段：	/sideBar/0/columns/0/tiles/0/topicInfo/type	integer,专题类型, 5-带tab专题、6-翻页专题, 0-其他
+漏下发字段：	/sideBar/0/columns/0/tiles/0/topicInfo/descPic	string,专题推荐位描述图片
+漏下发字段：	/sideBar/0/columns/0/tiles/0/appInfo/exParam	string,应用跳转json
+漏下发字段：	/sideBar/0/columns/0/tiles/0/appInfo/appUrl	string,h5跳转url
+漏下发字段：	/sideBar/0/columns/0/tiles/0/appInfo/categoryName	string,应用分类,UI没有展示需确认
+漏下发字段：	/sideBar/0/columns/0/tiles/0/appInfo/downloads	long,下载次数
+漏下发字段：	/sideBar/0/columns/0/tiles/0/appInfo/md5Sign	long,套餐id
+漏下发字段：	/sideBar/0/columns/0/tiles/0/appInfo/versionCode	long,版本code
+漏下发字段：	/sideBar/0/columns/0/tiles/0/appInfo/appIcon	string,应用或游戏icon
+!!! /sideBar/0/columns/0/tiles/0/vodInfo/preload_info字段未在sosoapi中录入
+vipId数组为空
+!!! /sideBar/0/columns/0/tiles/0/vodInfo/category_id字段未在sosoapi中录入
+漏下发字段：	/sideBar/0/columns/0/tiles/0/vodInfo/cardParentRemind	string,点卡标题
+漏下发字段：	/sideBar/0/columns/0/tiles/0/vodInfo/timeLength	integer,时长
+漏下发字段：	/sideBar/0/columns/0/tiles/0/vodInfo/cardRemind	string,点卡提示
+漏下发字段：	/sideBar/0/columns/0/tiles/0/vodInfo/cardDesc	string,点卡描述图片
+漏下发字段：	/sideBar/0/columns/0/tiles/0/vodInfo/episodeIndex	integer,海报跳转视频的集数
+漏下发字段：	/sideBar/0/columns/0/tiles/0/vodInfo/vendorName	string,提供商名称
+mark数组为空
+漏下发字段：	/sideBar/0/columns/0/tiles/0/showInfo/postPic	string,竖海报
+漏下发字段：	/sideBar/0/columns/0/tiles/0/showInfo/caroSource	integer,轮播内容来源方式，0-轮播窗口(运营配置)  1-聚看点(猜你喜欢接口，top20)
+漏下发字段：	/sideBar/0/columns/0/tiles/0/showInfo/caroMaskMapSource	integer,1，取推荐位大海报tile.showInfo.frontPic遍历存放到carousel.tile.[i].showInfo.frontPic；默认0
+漏下发字段：	/sideBar/0/columns/0/tiles/0/showInfo/frontPicSmall	string,小海报
+漏下发字段：	/sideBar/0/columns/0/tiles/0/showInfo/desc	string,更多说明（目前主要用于私人影院最下面的文字）
+漏下发字段：	/sideBar/0/columns/0/tiles/0/showInfo/slogan	string,在聚享购/聚好用/聚好玩中表示卖点
+漏下发字段：	/sideBar/0/columns/0/tiles/0/showInfo/caroPlainText	integer,是否纯文本，默认否，0-否 1-是
+漏下发字段：	/sideBar/0/columns/0/tiles/0/showInfo/caroPlayMode	integer,轮播窗/轮播起播模式，0-直接播放，1-点击播放。轮播默认是1，轮播窗默认0
+!!! /sideBar/0/columns/0/tiles/0/logInfo/channelid字段未在sosoapi中录入
+!!! /sideBar/0/columns/0/tiles/0/logInfo/navid字段未在sosoapi中录入
+漏下发字段：	/sideBar/0/columns/0/tiles/0/logInfo/algid	string,original为1推荐时相应的算法id，original为其他时此字段为空
+漏下发字段：	/sideBar/0/columns/0/tiles/0/logInfo/curpageid	string,当前页面id
+漏下发字段：	/sideBar/0/columns/0/tiles/0/logInfo/curpagetype	string,当前页面类型
+漏下发字段：	/sideBar/0/columns/0/tiles/0/vipInfo/vipWillPass	integer,即将过期天数
+漏下发字段：	/sideBar/0/columns/0/tiles/0/vipInfo/packageVipId	string,套餐包ID
+漏下发字段：	/sideBar/0/columns/0/tiles/0/vipInfo/vipDesc	string,描述
+漏下发字段：	/sideBar/0/columns/0/tiles/0/jumpSubTypeCode	string,1.2.3新增，标记会员中心媒资跳转的subtypecode，系统端内部使用
+漏下发字段：	/sideBar/0/columns/0/tiles/0/h5Url	string,h5跳转url
+漏下发字段：	/sideBar/0/columns/0/tiles/0/displayMode	integer,显示模式（1-默认模式、2-会员价模式、3-纯图模式）
+漏下发字段：	/sideBar/0/columns/0/tiles/0/naviId	long,导航id，当typeCode=8008时生效
+漏下发字段：	/sideBar/0/columns/0/tiles/0/adPosId	string,如果此推荐位是广告会下发此字段
+漏下发字段：	/sideBar/0/columns/0/tiles/1/topicInfo/type	integer,专题类型, 5-带tab专题、6-翻页专题, 0-其他
+漏下发字段：	/sideBar/0/columns/0/tiles/1/topicInfo/descPic	string,专题推荐位描述图片
+漏下发字段：	/sideBar/0/columns/0/tiles/1/appInfo/exParam	string,应用跳转json
+漏下发字段：	/sideBar/0/columns/0/tiles/1/appInfo/appUrl	string,h5跳转url
+漏下发字段：	/sideBar/0/columns/0/tiles/1/appInfo/categoryName	string,应用分类,UI没有展示需确认
+漏下发字段：	/sideBar/0/columns/0/tiles/1/appInfo/downloads	long,下载次数
+漏下发字段：	/sideBar/0/columns/0/tiles/1/appInfo/md5Sign	long,套餐id
+漏下发字段：	/sideBar/0/columns/0/tiles/1/appInfo/versionCode	long,版本code
+漏下发字段：	/sideBar/0/columns/0/tiles/1/appInfo/appIcon	string,应用或游戏icon
+!!! /sideBar/0/columns/0/tiles/1/vodInfo/preload_info字段未在sosoapi中录入
+vipId数组为空
+!!! /sideBar/0/columns/0/tiles/1/vodInfo/category_id字段未在sosoapi中录入
+漏下发字段：	/sideBar/0/columns/0/tiles/1/vodInfo/cardParentRemind	string,点卡标题
+漏下发字段：	/sideBar/0/columns/0/tiles/1/vodInfo/timeLength	integer,时长
+漏下发字段：	/sideBar/0/columns/0/tiles/1/vodInfo/cardRemind	string,点卡提示
+漏下发字段：	/sideBar/0/columns/0/tiles/1/vodInfo/cardDesc	string,点卡描述图片
+漏下发字段：	/sideBar/0/columns/0/tiles/1/vodInfo/episodeIndex	integer,海报跳转视频的集数
+漏下发字段：	/sideBar/0/columns/0/tiles/1/vodInfo/vendorName	string,提供商名称
+mark数组为空
+漏下发字段：	/sideBar/0/columns/0/tiles/1/showInfo/postPic	string,竖海报
+漏下发字段：	/sideBar/0/columns/0/tiles/1/showInfo/caroSource	integer,轮播内容来源方式，0-轮播窗口(运营配置)  1-聚看点(猜你喜欢接口，top20)
+漏下发字段：	/sideBar/0/columns/0/tiles/1/showInfo/caroMaskMapSource	integer,1，取推荐位大海报tile.showInfo.frontPic遍历存放到carousel.tile.[i].showInfo.frontPic；默认0
+漏下发字段：	/sideBar/0/columns/0/tiles/1/showInfo/frontPicSmall	string,小海报
+漏下发字段：	/sideBar/0/columns/0/tiles/1/showInfo/desc	string,更多说明（目前主要用于私人影院最下面的文字）
+漏下发字段：	/sideBar/0/columns/0/tiles/1/showInfo/slogan	string,在聚享购/聚好用/聚好玩中表示卖点
+漏下发字段：	/sideBar/0/columns/0/tiles/1/showInfo/caroPlainText	integer,是否纯文本，默认否，0-否 1-是
+漏下发字段：	/sideBar/0/columns/0/tiles/1/showInfo/caroPlayMode	integer,轮播窗/轮播起播模式，0-直接播放，1-点击播放。轮播默认是1，轮播窗默认0
+!!! /sideBar/0/columns/0/tiles/1/logInfo/channelid字段未在sosoapi中录入
+!!! /sideBar/0/columns/0/tiles/1/logInfo/navid字段未在sosoapi中录入
+漏下发字段：	/sideBar/0/columns/0/tiles/1/logInfo/algid	string,original为1推荐时相应的算法id，original为其他时此字段为空
+漏下发字段：	/sideBar/0/columns/0/tiles/1/logInfo/curpageid	string,当前页面id
+漏下发字段：	/sideBar/0/columns/0/tiles/1/logInfo/curpagetype	string,当前页面类型
+漏下发字段：	/sideBar/0/columns/0/tiles/1/vipInfo/vipWillPass	integer,即将过期天数
+漏下发字段：	/sideBar/0/columns/0/tiles/1/vipInfo/packageVipId	string,套餐包ID
+漏下发字段：	/sideBar/0/columns/0/tiles/1/vipInfo/vipDesc	string,描述
+漏下发字段：	/sideBar/0/columns/0/tiles/1/jumpSubTypeCode	string,1.2.3新增，标记会员中心媒资跳转的subtypecode，系统端内部使用
+漏下发字段：	/sideBar/0/columns/0/tiles/1/h5Url	string,h5跳转url
+漏下发字段：	/sideBar/0/columns/0/tiles/1/displayMode	integer,显示模式（1-默认模式、2-会员价模式、3-纯图模式）
+漏下发字段：	/sideBar/0/columns/0/tiles/1/naviId	long,导航id，当typeCode=8008时生效
+漏下发字段：	/sideBar/0/columns/0/tiles/1/adPosId	string,如果此推荐位是广告会下发此字段
+漏下发字段：	/sideBar/0/columns/0/tiles/2/topicInfo/type	integer,专题类型, 5-带tab专题、6-翻页专题, 0-其他
+漏下发字段：	/sideBar/0/columns/0/tiles/2/topicInfo/descPic	string,专题推荐位描述图片
+漏下发字段：	/sideBar/0/columns/0/tiles/2/appInfo/exParam	string,应用跳转json
+漏下发字段：	/sideBar/0/columns/0/tiles/2/appInfo/appUrl	string,h5跳转url
+漏下发字段：	/sideBar/0/columns/0/tiles/2/appInfo/categoryName	string,应用分类,UI没有展示需确认
+漏下发字段：	/sideBar/0/columns/0/tiles/2/appInfo/downloads	long,下载次数
+漏下发字段：	/sideBar/0/columns/0/tiles/2/appInfo/md5Sign	long,套餐id
+漏下发字段：	/sideBar/0/columns/0/tiles/2/appInfo/versionCode	long,版本code
+漏下发字段：	/sideBar/0/columns/0/tiles/2/appInfo/appIcon	string,应用或游戏icon
+!!! /sideBar/0/columns/0/tiles/2/vodInfo/preload_info字段未在sosoapi中录入
+/sideBar/0/columns/0/tiles/2/vodInfo/vipId 数组元素非对象为<type 'int'>
+!!! /sideBar/0/columns/0/tiles/2/vodInfo/category_id字段未在sosoapi中录入
+漏下发字段：	/sideBar/0/columns/0/tiles/2/vodInfo/cardParentRemind	string,点卡标题
+漏下发字段：	/sideBar/0/columns/0/tiles/2/vodInfo/timeLength	integer,时长
+漏下发字段：	/sideBar/0/columns/0/tiles/2/vodInfo/cardRemind	string,点卡提示
+漏下发字段：	/sideBar/0/columns/0/tiles/2/vodInfo/cardDesc	string,点卡描述图片
+漏下发字段：	/sideBar/0/columns/0/tiles/2/vodInfo/vendorName	string,提供商名称
+!!! /sideBar/0/columns/0/tiles/2/showInfo/mark/0/markType字段未在sosoapi中录入
+漏下发字段：	/sideBar/0/columns/0/tiles/2/showInfo/postPic	string,竖海报
+漏下发字段：	/sideBar/0/columns/0/tiles/2/showInfo/caroSource	integer,轮播内容来源方式，0-轮播窗口(运营配置)  1-聚看点(猜你喜欢接口，top20)
+漏下发字段：	/sideBar/0/columns/0/tiles/2/showInfo/caroMaskMapSource	integer,1，取推荐位大海报tile.showInfo.frontPic遍历存放到carousel.tile.[i].showInfo.frontPic；默认0
+漏下发字段：	/sideBar/0/columns/0/tiles/2/showInfo/frontPicSmall	string,小海报
+漏下发字段：	/sideBar/0/columns/0/tiles/2/showInfo/desc	string,更多说明（目前主要用于私人影院最下面的文字）
+漏下发字段：	/sideBar/0/columns/0/tiles/2/showInfo/slogan	string,在聚享购/聚好用/聚好玩中表示卖点
+漏下发字段：	/sideBar/0/columns/0/tiles/2/showInfo/caroPlainText	integer,是否纯文本，默认否，0-否 1-是
+漏下发字段：	/sideBar/0/columns/0/tiles/2/showInfo/caroPlayMode	integer,轮播窗/轮播起播模式，0-直接播放，1-点击播放。轮播默认是1，轮播窗默认0
+!!! /sideBar/0/columns/0/tiles/2/logInfo/channelid字段未在sosoapi中录入
+!!! /sideBar/0/columns/0/tiles/2/logInfo/navid字段未在sosoapi中录入
+漏下发字段：	/sideBar/0/columns/0/tiles/2/logInfo/algid	string,original为1推荐时相应的算法id，original为其他时此字段为空
+漏下发字段：	/sideBar/0/columns/0/tiles/2/logInfo/curpageid	string,当前页面id
+漏下发字段：	/sideBar/0/columns/0/tiles/2/logInfo/curpagetype	string,当前页面类型
+漏下发字段：	/sideBar/0/columns/0/tiles/2/vipInfo/vipWillPass	integer,即将过期天数
+漏下发字段：	/sideBar/0/columns/0/tiles/2/vipInfo/packageVipId	string,套餐包ID
+漏下发字段：	/sideBar/0/columns/0/tiles/2/vipInfo/vipDesc	string,描述
+漏下发字段：	/sideBar/0/columns/0/tiles/2/jumpSubTypeCode	string,1.2.3新增，标记会员中心媒资跳转的subtypecode，系统端内部使用
+漏下发字段：	/sideBar/0/columns/0/tiles/2/h5Url	string,h5跳转url
+漏下发字段：	/sideBar/0/columns/0/tiles/2/displayMode	integer,显示模式（1-默认模式、2-会员价模式、3-纯图模式）
+漏下发字段：	/sideBar/0/columns/0/tiles/2/naviId	long,导航id，当typeCode=8008时生效
+漏下发字段：	/sideBar/0/columns/0/tiles/2/adPosId	string,如果此推荐位是广告会下发此字段
+漏下发字段：	/sideBar/0/columns/0/tiles/3/topicInfo/type	integer,专题类型, 5-带tab专题、6-翻页专题, 0-其他
+漏下发字段：	/sideBar/0/columns/0/tiles/3/topicInfo/descPic	string,专题推荐位描述图片
+漏下发字段：	/sideBar/0/columns/0/tiles/3/appInfo/exParam	string,应用跳转json
+漏下发字段：	/sideBar/0/columns/0/tiles/3/appInfo/appUrl	string,h5跳转url
+漏下发字段：	/sideBar/0/columns/0/tiles/3/appInfo/categoryName	string,应用分类,UI没有展示需确认
+漏下发字段：	/sideBar/0/columns/0/tiles/3/appInfo/downloads	long,下载次数
+漏下发字段：	/sideBar/0/columns/0/tiles/3/appInfo/md5Sign	long,套餐id
+漏下发字段：	/sideBar/0/columns/0/tiles/3/appInfo/versionCode	long,版本code
+漏下发字段：	/sideBar/0/columns/0/tiles/3/appInfo/appIcon	string,应用或游戏icon
+!!! /sideBar/0/columns/0/tiles/3/vodInfo/preload_info字段未在sosoapi中录入
+vipId数组为空
+!!! /sideBar/0/columns/0/tiles/3/vodInfo/category_id字段未在sosoapi中录入
+漏下发字段：	/sideBar/0/columns/0/tiles/3/vodInfo/cardParentRemind	string,点卡标题
+漏下发字段：	/sideBar/0/columns/0/tiles/3/vodInfo/timeLength	integer,时长
+漏下发字段：	/sideBar/0/columns/0/tiles/3/vodInfo/cardRemind	string,点卡提示
+漏下发字段：	/sideBar/0/columns/0/tiles/3/vodInfo/cardDesc	string,点卡描述图片
+漏下发字段：	/sideBar/0/columns/0/tiles/3/vodInfo/episodeIndex	integer,海报跳转视频的集数
+漏下发字段：	/sideBar/0/columns/0/tiles/3/vodInfo/vendorName	string,提供商名称
+mark数组为空
+漏下发字段：	/sideBar/0/columns/0/tiles/3/showInfo/postPic	string,竖海报
+漏下发字段：	/sideBar/0/columns/0/tiles/3/showInfo/caroSource	integer,轮播内容来源方式，0-轮播窗口(运营配置)  1-聚看点(猜你喜欢接口，top20)
+漏下发字段：	/sideBar/0/columns/0/tiles/3/showInfo/caroMaskMapSource	integer,1，取推荐位大海报tile.showInfo.frontPic遍历存放到carousel.tile.[i].showInfo.frontPic；默认0
+漏下发字段：	/sideBar/0/columns/0/tiles/3/showInfo/frontPicSmall	string,小海报
+漏下发字段：	/sideBar/0/columns/0/tiles/3/showInfo/desc	string,更多说明（目前主要用于私人影院最下面的文字）
+漏下发字段：	/sideBar/0/columns/0/tiles/3/showInfo/slogan	string,在聚享购/聚好用/聚好玩中表示卖点
+漏下发字段：	/sideBar/0/columns/0/tiles/3/showInfo/caroPlainText	integer,是否纯文本，默认否，0-否 1-是
+漏下发字段：	/sideBar/0/columns/0/tiles/3/showInfo/caroPlayMode	integer,轮播窗/轮播起播模式，0-直接播放，1-点击播放。轮播默认是1，轮播窗默认0
+!!! /sideBar/0/columns/0/tiles/3/logInfo/channelid字段未在sosoapi中录入
+!!! /sideBar/0/columns/0/tiles/3/logInfo/navid字段未在sosoapi中录入
+漏下发字段：	/sideBar/0/columns/0/tiles/3/logInfo/algid	string,original为1推荐时相应的算法id，original为其他时此字段为空
+漏下发字段：	/sideBar/0/columns/0/tiles/3/logInfo/curpageid	string,当前页面id
+漏下发字段：	/sideBar/0/columns/0/tiles/3/logInfo/curpagetype	string,当前页面类型
+漏下发字段：	/sideBar/0/columns/0/tiles/3/vipInfo/vipWillPass	integer,即将过期天数
+漏下发字段：	/sideBar/0/columns/0/tiles/3/vipInfo/packageVipId	string,套餐包ID
+漏下发字段：	/sideBar/0/columns/0/tiles/3/vipInfo/vipDesc	string,描述
+漏下发字段：	/sideBar/0/columns/0/tiles/3/jumpSubTypeCode	string,1.2.3新增，标记会员中心媒资跳转的subtypecode，系统端内部使用
+漏下发字段：	/sideBar/0/columns/0/tiles/3/h5Url	string,h5跳转url
+漏下发字段：	/sideBar/0/columns/0/tiles/3/displayMode	integer,显示模式（1-默认模式、2-会员价模式、3-纯图模式）
+漏下发字段：	/sideBar/0/columns/0/tiles/3/naviId	long,导航id，当typeCode=8008时生效
+漏下发字段：	/sideBar/0/columns/0/tiles/3/adPosId	string,如果此推荐位是广告会下发此字段
+漏下发字段：	/sideBar/0/columns/0/tiles/4/topicInfo/type	integer,专题类型, 5-带tab专题、6-翻页专题, 0-其他
+漏下发字段：	/sideBar/0/columns/0/tiles/4/topicInfo/descPic	string,专题推荐位描述图片
+漏下发字段：	/sideBar/0/columns/0/tiles/4/appInfo/exParam	string,应用跳转json
+漏下发字段：	/sideBar/0/columns/0/tiles/4/appInfo/appUrl	string,h5跳转url
+漏下发字段：	/sideBar/0/columns/0/tiles/4/appInfo/categoryName	string,应用分类,UI没有展示需确认
+漏下发字段：	/sideBar/0/columns/0/tiles/4/appInfo/downloads	long,下载次数
+漏下发字段：	/sideBar/0/columns/0/tiles/4/appInfo/md5Sign	long,套餐id
+漏下发字段：	/sideBar/0/columns/0/tiles/4/appInfo/versionCode	long,版本code
+漏下发字段：	/sideBar/0/columns/0/tiles/4/appInfo/appIcon	string,应用或游戏icon
+漏下发字段：	/sideBar/0/columns/0/tiles/4/vodInfo/cardParentRemind	string,点卡标题
+漏下发字段：	/sideBar/0/columns/0/tiles/4/vodInfo/showDetail	integer,是否直接播放，1是进入详情，0是直接播放
+漏下发字段：	/sideBar/0/columns/0/tiles/4/vodInfo/total	integer,总集数
+漏下发字段：	/sideBar/0/columns/0/tiles/4/vodInfo/timeLength	integer,时长
+漏下发字段：	/sideBar/0/columns/0/tiles/4/vodInfo/cardRemind	string,点卡提示
+漏下发字段：	/sideBar/0/columns/0/tiles/4/vodInfo/cardDesc	string,点卡描述图片
+漏下发字段：	/sideBar/0/columns/0/tiles/4/vodInfo/current	integer,当前集数
+漏下发字段：	/sideBar/0/columns/0/tiles/4/vodInfo/updateMark	string,更新至第XX集
+漏下发字段：	/sideBar/0/columns/0/tiles/4/vodInfo/is_fee	integer,是否付费，1-付费 0-不付费
+漏下发字段：	/sideBar/0/columns/0/tiles/4/vodInfo/episodeIndex	integer,海报跳转视频的集数
+漏下发字段：	/sideBar/0/columns/0/tiles/4/vodInfo/venderId	integer,供应商id
+漏下发字段：	/sideBar/0/columns/0/tiles/4/vodInfo/doubanScore	string,豆瓣评分
+漏下发字段：	/sideBar/0/columns/0/tiles/4/vodInfo/vendorName	string,提供商名称
+漏下发字段：	/sideBar/0/columns/0/tiles/4/shortMediaInfo/0/frontPicSmall	string,小海报
+漏下发字段：	/sideBar/0/columns/0/tiles/4/shortMediaInfo/0/focusPic	string,获取焦点海报
+漏下发字段：	/sideBar/0/columns/0/tiles/4/shortMediaInfo/1/frontPicSmall	string,小海报
+漏下发字段：	/sideBar/0/columns/0/tiles/4/shortMediaInfo/1/focusPic	string,获取焦点海报
+漏下发字段：	/sideBar/0/columns/0/tiles/4/shortMediaInfo/2/frontPicSmall	string,小海报
+漏下发字段：	/sideBar/0/columns/0/tiles/4/shortMediaInfo/2/focusPic	string,获取焦点海报
+漏下发字段：	/sideBar/0/columns/0/tiles/4/showInfo/postPic	string,竖海报
+漏下发字段：	/sideBar/0/columns/0/tiles/4/showInfo/caroSource	integer,轮播内容来源方式，0-轮播窗口(运营配置)  1-聚看点(猜你喜欢接口，top20)
+漏下发字段：	/sideBar/0/columns/0/tiles/4/showInfo/score	string,分数
+漏下发字段：	/sideBar/0/columns/0/tiles/4/showInfo/frontPic	string,海报
+漏下发字段：	/sideBar/0/columns/0/tiles/4/showInfo/price	long,价格,单位为厘，vod根据区分单点，1-非单点，0-单点视频
+漏下发字段：	/sideBar/0/columns/0/tiles/4/showInfo/caroMaskMapSource	integer,1，取推荐位大海报tile.showInfo.frontPic遍历存放到carousel.tile.[i].showInfo.frontPic；默认0
+漏下发字段：	/sideBar/0/columns/0/tiles/4/showInfo/frontPicSmall	string,小海报
+漏下发字段：	/sideBar/0/columns/0/tiles/4/showInfo/desc	string,更多说明（目前主要用于私人影院最下面的文字）
+漏下发字段：	/sideBar/0/columns/0/tiles/4/showInfo/slogan	string,在聚享购/聚好用/聚好玩中表示卖点
+漏下发字段：	/sideBar/0/columns/0/tiles/4/showInfo/caroPlainText	integer,是否纯文本，默认否，0-否 1-是
+漏下发字段：	/sideBar/0/columns/0/tiles/4/showInfo/caroPlayMode	integer,轮播窗/轮播起播模式，0-直接播放，1-点击播放。轮播默认是1，轮播窗默认0
+!!! /sideBar/0/columns/0/tiles/4/logInfo/channelid字段未在sosoapi中录入
+!!! /sideBar/0/columns/0/tiles/4/logInfo/navid字段未在sosoapi中录入
+漏下发字段：	/sideBar/0/columns/0/tiles/4/logInfo/algid	string,original为1推荐时相应的算法id，original为其他时此字段为空
+漏下发字段：	/sideBar/0/columns/0/tiles/4/logInfo/curpageid	string,当前页面id
+漏下发字段：	/sideBar/0/columns/0/tiles/4/logInfo/curpagetype	string,当前页面类型
+漏下发字段：	/sideBar/0/columns/0/tiles/4/vipInfo/vipWillPass	integer,即将过期天数
+漏下发字段：	/sideBar/0/columns/0/tiles/4/vipInfo/packageVipId	string,套餐包ID
+漏下发字段：	/sideBar/0/columns/0/tiles/4/vipInfo/vipDesc	string,描述
+漏下发字段：	/sideBar/0/columns/0/tiles/4/jumpSubTypeCode	string,1.2.3新增，标记会员中心媒资跳转的subtypecode，系统端内部使用
+漏下发字段：	/sideBar/0/columns/0/tiles/4/params	string,跳转参数json
+漏下发字段：	/sideBar/0/columns/0/tiles/4/h5Url	string,h5跳转url
+漏下发字段：	/sideBar/0/columns/0/tiles/4/displayMode	integer,显示模式（1-默认模式、2-会员价模式、3-纯图模式）
+漏下发字段：	/sideBar/0/columns/0/tiles/4/naviId	long,导航id，当typeCode=8008时生效
+漏下发字段：	/sideBar/0/columns/0/tiles/4/adPosId	string,如果此推荐位是广告会下发此字段
+漏下发字段：	/sideBar/0/columns/0/tiles/5/topicInfo/type	integer,专题类型, 5-带tab专题、6-翻页专题, 0-其他
+漏下发字段：	/sideBar/0/columns/0/tiles/5/topicInfo/descPic	string,专题推荐位描述图片
+漏下发字段：	/sideBar/0/columns/0/tiles/5/appInfo/exParam	string,应用跳转json
+漏下发字段：	/sideBar/0/columns/0/tiles/5/appInfo/appUrl	string,h5跳转url
+漏下发字段：	/sideBar/0/columns/0/tiles/5/appInfo/categoryName	string,应用分类,UI没有展示需确认
+漏下发字段：	/sideBar/0/columns/0/tiles/5/appInfo/downloads	long,下载次数
+漏下发字段：	/sideBar/0/columns/0/tiles/5/appInfo/md5Sign	long,套餐id
+漏下发字段：	/sideBar/0/columns/0/tiles/5/appInfo/versionCode	long,版本code
+漏下发字段：	/sideBar/0/columns/0/tiles/5/appInfo/appIcon	string,应用或游戏icon
+!!! /sideBar/0/columns/0/tiles/5/vodInfo/preload_info字段未在sosoapi中录入
+vipId数组为空
+!!! /sideBar/0/columns/0/tiles/5/vodInfo/category_id字段未在sosoapi中录入
+漏下发字段：	/sideBar/0/columns/0/tiles/5/vodInfo/cardParentRemind	string,点卡标题
+漏下发字段：	/sideBar/0/columns/0/tiles/5/vodInfo/timeLength	integer,时长
+漏下发字段：	/sideBar/0/columns/0/tiles/5/vodInfo/cardRemind	string,点卡提示
+漏下发字段：	/sideBar/0/columns/0/tiles/5/vodInfo/cardDesc	string,点卡描述图片
+漏下发字段：	/sideBar/0/columns/0/tiles/5/vodInfo/episodeIndex	integer,海报跳转视频的集数
+漏下发字段：	/sideBar/0/columns/0/tiles/5/vodInfo/vendorName	string,提供商名称
+mark数组为空
+漏下发字段：	/sideBar/0/columns/0/tiles/5/showInfo/postPic	string,竖海报
+漏下发字段：	/sideBar/0/columns/0/tiles/5/showInfo/caroSource	integer,轮播内容来源方式，0-轮播窗口(运营配置)  1-聚看点(猜你喜欢接口，top20)
+漏下发字段：	/sideBar/0/columns/0/tiles/5/showInfo/caroMaskMapSource	integer,1，取推荐位大海报tile.showInfo.frontPic遍历存放到carousel.tile.[i].showInfo.frontPic；默认0
+漏下发字段：	/sideBar/0/columns/0/tiles/5/showInfo/frontPicSmall	string,小海报
+漏下发字段：	/sideBar/0/columns/0/tiles/5/showInfo/desc	string,更多说明（目前主要用于私人影院最下面的文字）
+漏下发字段：	/sideBar/0/columns/0/tiles/5/showInfo/slogan	string,在聚享购/聚好用/聚好玩中表示卖点
+漏下发字段：	/sideBar/0/columns/0/tiles/5/showInfo/caroPlainText	integer,是否纯文本，默认否，0-否 1-是
+漏下发字段：	/sideBar/0/columns/0/tiles/5/showInfo/caroPlayMode	integer,轮播窗/轮播起播模式，0-直接播放，1-点击播放。轮播默认是1，轮播窗默认0
+!!! /sideBar/0/columns/0/tiles/5/logInfo/channelid字段未在sosoapi中录入
+!!! /sideBar/0/columns/0/tiles/5/logInfo/navid字段未在sosoapi中录入
+漏下发字段：	/sideBar/0/columns/0/tiles/5/logInfo/algid	string,original为1推荐时相应的算法id，original为其他时此字段为空
+漏下发字段：	/sideBar/0/columns/0/tiles/5/logInfo/curpageid	string,当前页面id
+漏下发字段：	/sideBar/0/columns/0/tiles/5/logInfo/curpagetype	string,当前页面类型
+漏下发字段：	/sideBar/0/columns/0/tiles/5/vipInfo/vipWillPass	integer,即将过期天数
+漏下发字段：	/sideBar/0/columns/0/tiles/5/vipInfo/packageVipId	string,套餐包ID
+漏下发字段：	/sideBar/0/columns/0/tiles/5/vipInfo/vipDesc	string,描述
+漏下发字段：	/sideBar/0/columns/0/tiles/5/jumpSubTypeCode	string,1.2.3新增，标记会员中心媒资跳转的subtypecode，系统端内部使用
+漏下发字段：	/sideBar/0/columns/0/tiles/5/h5Url	string,h5跳转url
+漏下发字段：	/sideBar/0/columns/0/tiles/5/displayMode	integer,显示模式（1-默认模式、2-会员价模式、3-纯图模式）
+漏下发字段：	/sideBar/0/columns/0/tiles/5/naviId	long,导航id，当typeCode=8008时生效
+漏下发字段：	/sideBar/0/columns/0/tiles/5/adPosId	string,如果此推荐位是广告会下发此字段
+漏下发字段：	/sideBar/0/columns/0/tiles/6/topicInfo/type	integer,专题类型, 5-带tab专题、6-翻页专题, 0-其他
+漏下发字段：	/sideBar/0/columns/0/tiles/6/topicInfo/descPic	string,专题推荐位描述图片
+漏下发字段：	/sideBar/0/columns/0/tiles/6/appInfo/exParam	string,应用跳转json
+漏下发字段：	/sideBar/0/columns/0/tiles/6/appInfo/appUrl	string,h5跳转url
+漏下发字段：	/sideBar/0/columns/0/tiles/6/appInfo/categoryName	string,应用分类,UI没有展示需确认
+漏下发字段：	/sideBar/0/columns/0/tiles/6/appInfo/downloads	long,下载次数
+漏下发字段：	/sideBar/0/columns/0/tiles/6/appInfo/md5Sign	long,套餐id
+漏下发字段：	/sideBar/0/columns/0/tiles/6/appInfo/versionCode	long,版本code
+漏下发字段：	/sideBar/0/columns/0/tiles/6/appInfo/appIcon	string,应用或游戏icon
+漏下发字段：	/sideBar/0/columns/0/tiles/6/vodInfo/cardParentRemind	string,点卡标题
+漏下发字段：	/sideBar/0/columns/0/tiles/6/vodInfo/showDetail	integer,是否直接播放，1是进入详情，0是直接播放
+漏下发字段：	/sideBar/0/columns/0/tiles/6/vodInfo/total	integer,总集数
+漏下发字段：	/sideBar/0/columns/0/tiles/6/vodInfo/timeLength	integer,时长
+漏下发字段：	/sideBar/0/columns/0/tiles/6/vodInfo/cardRemind	string,点卡提示
+漏下发字段：	/sideBar/0/columns/0/tiles/6/vodInfo/cardDesc	string,点卡描述图片
+漏下发字段：	/sideBar/0/columns/0/tiles/6/vodInfo/current	integer,当前集数
+漏下发字段：	/sideBar/0/columns/0/tiles/6/vodInfo/updateMark	string,更新至第XX集
+漏下发字段：	/sideBar/0/columns/0/tiles/6/vodInfo/is_fee	integer,是否付费，1-付费 0-不付费
+漏下发字段：	/sideBar/0/columns/0/tiles/6/vodInfo/episodeIndex	integer,海报跳转视频的集数
+漏下发字段：	/sideBar/0/columns/0/tiles/6/vodInfo/venderId	integer,供应商id
+漏下发字段：	/sideBar/0/columns/0/tiles/6/vodInfo/doubanScore	string,豆瓣评分
+漏下发字段：	/sideBar/0/columns/0/tiles/6/vodInfo/vendorName	string,提供商名称
+漏下发字段：	/sideBar/0/columns/0/tiles/6/showInfo/postPic	string,竖海报
+漏下发字段：	/sideBar/0/columns/0/tiles/6/showInfo/caroSource	integer,轮播内容来源方式，0-轮播窗口(运营配置)  1-聚看点(猜你喜欢接口，top20)
+漏下发字段：	/sideBar/0/columns/0/tiles/6/showInfo/score	string,分数
+漏下发字段：	/sideBar/0/columns/0/tiles/6/showInfo/frontPic	string,海报
+漏下发字段：	/sideBar/0/columns/0/tiles/6/showInfo/price	long,价格,单位为厘，vod根据区分单点，1-非单点，0-单点视频
+漏下发字段：	/sideBar/0/columns/0/tiles/6/showInfo/caroMaskMapSource	integer,1，取推荐位大海报tile.showInfo.frontPic遍历存放到carousel.tile.[i].showInfo.frontPic；默认0
+漏下发字段：	/sideBar/0/columns/0/tiles/6/showInfo/frontPicSmall	string,小海报
+漏下发字段：	/sideBar/0/columns/0/tiles/6/showInfo/desc	string,更多说明（目前主要用于私人影院最下面的文字）
+漏下发字段：	/sideBar/0/columns/0/tiles/6/showInfo/slogan	string,在聚享购/聚好用/聚好玩中表示卖点
+漏下发字段：	/sideBar/0/columns/0/tiles/6/showInfo/caroPlainText	integer,是否纯文本，默认否，0-否 1-是
+漏下发字段：	/sideBar/0/columns/0/tiles/6/showInfo/caroPlayMode	integer,轮播窗/轮播起播模式，0-直接播放，1-点击播放。轮播默认是1，轮播窗默认0
+!!! /sideBar/0/columns/0/tiles/6/logInfo/channelid字段未在sosoapi中录入
+!!! /sideBar/0/columns/0/tiles/6/logInfo/navid字段未在sosoapi中录入
+漏下发字段：	/sideBar/0/columns/0/tiles/6/logInfo/algid	string,original为1推荐时相应的算法id，original为其他时此字段为空
+漏下发字段：	/sideBar/0/columns/0/tiles/6/logInfo/curpageid	string,当前页面id
+漏下发字段：	/sideBar/0/columns/0/tiles/6/logInfo/curpagetype	string,当前页面类型
+漏下发字段：	/sideBar/0/columns/0/tiles/6/vipInfo/vipWillPass	integer,即将过期天数
+漏下发字段：	/sideBar/0/columns/0/tiles/6/vipInfo/packageVipId	string,套餐包ID
+漏下发字段：	/sideBar/0/columns/0/tiles/6/vipInfo/vipDesc	string,描述
+漏下发字段：	/sideBar/0/columns/0/tiles/6/jumpSubTypeCode	string,1.2.3新增，标记会员中心媒资跳转的subtypecode，系统端内部使用
+漏下发字段：	/sideBar/0/columns/0/tiles/6/params	string,跳转参数json
+漏下发字段：	/sideBar/0/columns/0/tiles/6/h5Url	string,h5跳转url
+漏下发字段：	/sideBar/0/columns/0/tiles/6/displayMode	integer,显示模式（1-默认模式、2-会员价模式、3-纯图模式）
+漏下发字段：	/sideBar/0/columns/0/tiles/6/naviId	long,导航id，当typeCode=8008时生效
+漏下发字段：	/sideBar/0/columns/0/tiles/6/adPosId	string,如果此推荐位是广告会下发此字段
+漏下发字段：	/sideBar/0/columns/0/tiles/7/topicInfo/type	integer,专题类型, 5-带tab专题、6-翻页专题, 0-其他
+漏下发字段：	/sideBar/0/columns/0/tiles/7/topicInfo/descPic	string,专题推荐位描述图片
+漏下发字段：	/sideBar/0/columns/0/tiles/7/appInfo/exParam	string,应用跳转json
+漏下发字段：	/sideBar/0/columns/0/tiles/7/appInfo/appUrl	string,h5跳转url
+漏下发字段：	/sideBar/0/columns/0/tiles/7/appInfo/categoryName	string,应用分类,UI没有展示需确认
+漏下发字段：	/sideBar/0/columns/0/tiles/7/appInfo/downloads	long,下载次数
+漏下发字段：	/sideBar/0/columns/0/tiles/7/appInfo/md5Sign	long,套餐id
+漏下发字段：	/sideBar/0/columns/0/tiles/7/appInfo/versionCode	long,版本code
+漏下发字段：	/sideBar/0/columns/0/tiles/7/appInfo/appIcon	string,应用或游戏icon
+漏下发字段：	/sideBar/0/columns/0/tiles/7/vodInfo/cardParentRemind	string,点卡标题
+漏下发字段：	/sideBar/0/columns/0/tiles/7/vodInfo/showDetail	integer,是否直接播放，1是进入详情，0是直接播放
+漏下发字段：	/sideBar/0/columns/0/tiles/7/vodInfo/total	integer,总集数
+漏下发字段：	/sideBar/0/columns/0/tiles/7/vodInfo/timeLength	integer,时长
+漏下发字段：	/sideBar/0/columns/0/tiles/7/vodInfo/cardRemind	string,点卡提示
+漏下发字段：	/sideBar/0/columns/0/tiles/7/vodInfo/cardDesc	string,点卡描述图片
+漏下发字段：	/sideBar/0/columns/0/tiles/7/vodInfo/current	integer,当前集数
+漏下发字段：	/sideBar/0/columns/0/tiles/7/vodInfo/updateMark	string,更新至第XX集
+漏下发字段：	/sideBar/0/columns/0/tiles/7/vodInfo/is_fee	integer,是否付费，1-付费 0-不付费
+漏下发字段：	/sideBar/0/columns/0/tiles/7/vodInfo/episodeIndex	integer,海报跳转视频的集数
+漏下发字段：	/sideBar/0/columns/0/tiles/7/vodInfo/venderId	integer,供应商id
+漏下发字段：	/sideBar/0/columns/0/tiles/7/vodInfo/doubanScore	string,豆瓣评分
+漏下发字段：	/sideBar/0/columns/0/tiles/7/vodInfo/vendorName	string,提供商名称
+漏下发字段：	/sideBar/0/columns/0/tiles/7/showInfo/postPic	string,竖海报
+漏下发字段：	/sideBar/0/columns/0/tiles/7/showInfo/caroSource	integer,轮播内容来源方式，0-轮播窗口(运营配置)  1-聚看点(猜你喜欢接口，top20)
+漏下发字段：	/sideBar/0/columns/0/tiles/7/showInfo/score	string,分数
+漏下发字段：	/sideBar/0/columns/0/tiles/7/showInfo/frontPic	string,海报
+漏下发字段：	/sideBar/0/columns/0/tiles/7/showInfo/price	long,价格,单位为厘，vod根据区分单点，1-非单点，0-单点视频
+漏下发字段：	/sideBar/0/columns/0/tiles/7/showInfo/caroMaskMapSource	integer,1，取推荐位大海报tile.showInfo.frontPic遍历存放到carousel.tile.[i].showInfo.frontPic；默认0
+漏下发字段：	/sideBar/0/columns/0/tiles/7/showInfo/frontPicSmall	string,小海报
+漏下发字段：	/sideBar/0/columns/0/tiles/7/showInfo/desc	string,更多说明（目前主要用于私人影院最下面的文字）
+漏下发字段：	/sideBar/0/columns/0/tiles/7/showInfo/slogan	string,在聚享购/聚好用/聚好玩中表示卖点
+漏下发字段：	/sideBar/0/columns/0/tiles/7/showInfo/caroPlainText	integer,是否纯文本，默认否，0-否 1-是
+漏下发字段：	/sideBar/0/columns/0/tiles/7/showInfo/caroPlayMode	integer,轮播窗/轮播起播模式，0-直接播放，1-点击播放。轮播默认是1，轮播窗默认0
+!!! /sideBar/0/columns/0/tiles/7/logInfo/channelid字段未在sosoapi中录入
+!!! /sideBar/0/columns/0/tiles/7/logInfo/navid字段未在sosoapi中录入
+漏下发字段：	/sideBar/0/columns/0/tiles/7/logInfo/algid	string,original为1推荐时相应的算法id，original为其他时此字段为空
+漏下发字段：	/sideBar/0/columns/0/tiles/7/logInfo/curpageid	string,当前页面id
+漏下发字段：	/sideBar/0/columns/0/tiles/7/logInfo/curpagetype	string,当前页面类型
+漏下发字段：	/sideBar/0/columns/0/tiles/7/vipInfo/vipWillPass	integer,即将过期天数
+漏下发字段：	/sideBar/0/columns/0/tiles/7/vipInfo/vipDesc	string,描述
+漏下发字段：	/sideBar/0/columns/0/tiles/7/jumpSubTypeCode	string,1.2.3新增，标记会员中心媒资跳转的subtypecode，系统端内部使用
+漏下发字段：	/sideBar/0/columns/0/tiles/7/params	string,跳转参数json
+漏下发字段：	/sideBar/0/columns/0/tiles/7/h5Url	string,h5跳转url
+漏下发字段：	/sideBar/0/columns/0/tiles/7/displayMode	integer,显示模式（1-默认模式、2-会员价模式、3-纯图模式）
+漏下发字段：	/sideBar/0/columns/0/tiles/7/naviId	long,导航id，当typeCode=8008时生效
+漏下发字段：	/sideBar/0/columns/0/tiles/7/adPosId	string,如果此推荐位是广告会下发此字段
+漏下发字段：	/sideBar/0/columns/0/tiles/8/topicInfo/type	integer,专题类型, 5-带tab专题、6-翻页专题, 0-其他
+漏下发字段：	/sideBar/0/columns/0/tiles/8/topicInfo/descPic	string,专题推荐位描述图片
+漏下发字段：	/sideBar/0/columns/0/tiles/8/appInfo/exParam	string,应用跳转json
+漏下发字段：	/sideBar/0/columns/0/tiles/8/appInfo/appUrl	string,h5跳转url
+漏下发字段：	/sideBar/0/columns/0/tiles/8/appInfo/categoryName	string,应用分类,UI没有展示需确认
+漏下发字段：	/sideBar/0/columns/0/tiles/8/appInfo/downloads	long,下载次数
+漏下发字段：	/sideBar/0/columns/0/tiles/8/appInfo/md5Sign	long,套餐id
+漏下发字段：	/sideBar/0/columns/0/tiles/8/appInfo/versionCode	long,版本code
+漏下发字段：	/sideBar/0/columns/0/tiles/8/appInfo/appIcon	string,应用或游戏icon
+漏下发字段：	/sideBar/0/columns/0/tiles/8/vodInfo/cardParentRemind	string,点卡标题
+漏下发字段：	/sideBar/0/columns/0/tiles/8/vodInfo/showDetail	integer,是否直接播放，1是进入详情，0是直接播放
+漏下发字段：	/sideBar/0/columns/0/tiles/8/vodInfo/total	integer,总集数
+漏下发字段：	/sideBar/0/columns/0/tiles/8/vodInfo/timeLength	integer,时长
+漏下发字段：	/sideBar/0/columns/0/tiles/8/vodInfo/cardRemind	string,点卡提示
+漏下发字段：	/sideBar/0/columns/0/tiles/8/vodInfo/cardDesc	string,点卡描述图片
+漏下发字段：	/sideBar/0/columns/0/tiles/8/vodInfo/current	integer,当前集数
+漏下发字段：	/sideBar/0/columns/0/tiles/8/vodInfo/updateMark	string,更新至第XX集
+漏下发字段：	/sideBar/0/columns/0/tiles/8/vodInfo/is_fee	integer,是否付费，1-付费 0-不付费
+漏下发字段：	/sideBar/0/columns/0/tiles/8/vodInfo/episodeIndex	integer,海报跳转视频的集数
+漏下发字段：	/sideBar/0/columns/0/tiles/8/vodInfo/venderId	integer,供应商id
+漏下发字段：	/sideBar/0/columns/0/tiles/8/vodInfo/doubanScore	string,豆瓣评分
+漏下发字段：	/sideBar/0/columns/0/tiles/8/vodInfo/vendorName	string,提供商名称
+漏下发字段：	/sideBar/0/columns/0/tiles/8/showInfo/postPic	string,竖海报
+漏下发字段：	/sideBar/0/columns/0/tiles/8/showInfo/caroSource	integer,轮播内容来源方式，0-轮播窗口(运营配置)  1-聚看点(猜你喜欢接口，top20)
+漏下发字段：	/sideBar/0/columns/0/tiles/8/showInfo/score	string,分数
+漏下发字段：	/sideBar/0/columns/0/tiles/8/showInfo/frontPic	string,海报
+漏下发字段：	/sideBar/0/columns/0/tiles/8/showInfo/price	long,价格,单位为厘，vod根据区分单点，1-非单点，0-单点视频
+漏下发字段：	/sideBar/0/columns/0/tiles/8/showInfo/caroMaskMapSource	integer,1，取推荐位大海报tile.showInfo.frontPic遍历存放到carousel.tile.[i].showInfo.frontPic；默认0
+漏下发字段：	/sideBar/0/columns/0/tiles/8/showInfo/frontPicSmall	string,小海报
+漏下发字段：	/sideBar/0/columns/0/tiles/8/showInfo/desc	string,更多说明（目前主要用于私人影院最下面的文字）
+漏下发字段：	/sideBar/0/columns/0/tiles/8/showInfo/slogan	string,在聚享购/聚好用/聚好玩中表示卖点
+漏下发字段：	/sideBar/0/columns/0/tiles/8/showInfo/caroPlainText	integer,是否纯文本，默认否，0-否 1-是
+漏下发字段：	/sideBar/0/columns/0/tiles/8/showInfo/caroPlayMode	integer,轮播窗/轮播起播模式，0-直接播放，1-点击播放。轮播默认是1，轮播窗默认0
+!!! /sideBar/0/columns/0/tiles/8/logInfo/channelid字段未在sosoapi中录入
+!!! /sideBar/0/columns/0/tiles/8/logInfo/navid字段未在sosoapi中录入
+漏下发字段：	/sideBar/0/columns/0/tiles/8/logInfo/algid	string,original为1推荐时相应的算法id，original为其他时此字段为空
+漏下发字段：	/sideBar/0/columns/0/tiles/8/logInfo/curpageid	string,当前页面id
+漏下发字段：	/sideBar/0/columns/0/tiles/8/logInfo/curpagetype	string,当前页面类型
+漏下发字段：	/sideBar/0/columns/0/tiles/8/vipInfo/vipWillPass	integer,即将过期天数
+漏下发字段：	/sideBar/0/columns/0/tiles/8/vipInfo/packageVipId	string,套餐包ID
+漏下发字段：	/sideBar/0/columns/0/tiles/8/vipInfo/vipDesc	string,描述
+漏下发字段：	/sideBar/0/columns/0/tiles/8/jumpSubTypeCode	string,1.2.3新增，标记会员中心媒资跳转的subtypecode，系统端内部使用
+漏下发字段：	/sideBar/0/columns/0/tiles/8/params	string,跳转参数json
+漏下发字段：	/sideBar/0/columns/0/tiles/8/h5Url	string,h5跳转url
+漏下发字段：	/sideBar/0/columns/0/tiles/8/displayMode	integer,显示模式（1-默认模式、2-会员价模式、3-纯图模式）
+漏下发字段：	/sideBar/0/columns/0/tiles/8/naviId	long,导航id，当typeCode=8008时生效
+漏下发字段：	/sideBar/0/columns/0/tiles/8/adPosId	string,如果此推荐位是广告会下发此字段
+漏下发字段：	/sideBar/0/columns/0/tiles/9/topicInfo/type	integer,专题类型, 5-带tab专题、6-翻页专题, 0-其他
+漏下发字段：	/sideBar/0/columns/0/tiles/9/topicInfo/descPic	string,专题推荐位描述图片
+漏下发字段：	/sideBar/0/columns/0/tiles/9/appInfo/exParam	string,应用跳转json
+漏下发字段：	/sideBar/0/columns/0/tiles/9/appInfo/appUrl	string,h5跳转url
+漏下发字段：	/sideBar/0/columns/0/tiles/9/appInfo/categoryName	string,应用分类,UI没有展示需确认
+漏下发字段：	/sideBar/0/columns/0/tiles/9/appInfo/downloads	long,下载次数
+漏下发字段：	/sideBar/0/columns/0/tiles/9/appInfo/md5Sign	long,套餐id
+漏下发字段：	/sideBar/0/columns/0/tiles/9/appInfo/versionCode	long,版本code
+漏下发字段：	/sideBar/0/columns/0/tiles/9/appInfo/appIcon	string,应用或游戏icon
+漏下发字段：	/sideBar/0/columns/0/tiles/9/vodInfo/cardParentRemind	string,点卡标题
+漏下发字段：	/sideBar/0/columns/0/tiles/9/vodInfo/showDetail	integer,是否直接播放，1是进入详情，0是直接播放
+漏下发字段：	/sideBar/0/columns/0/tiles/9/vodInfo/total	integer,总集数
+漏下发字段：	/sideBar/0/columns/0/tiles/9/vodInfo/timeLength	integer,时长
+漏下发字段：	/sideBar/0/columns/0/tiles/9/vodInfo/cardRemind	string,点卡提示
+漏下发字段：	/sideBar/0/columns/0/tiles/9/vodInfo/cardDesc	string,点卡描述图片
+漏下发字段：	/sideBar/0/columns/0/tiles/9/vodInfo/current	integer,当前集数
+漏下发字段：	/sideBar/0/columns/0/tiles/9/vodInfo/updateMark	string,更新至第XX集
+漏下发字段：	/sideBar/0/columns/0/tiles/9/vodInfo/is_fee	integer,是否付费，1-付费 0-不付费
+漏下发字段：	/sideBar/0/columns/0/tiles/9/vodInfo/episodeIndex	integer,海报跳转视频的集数
+漏下发字段：	/sideBar/0/columns/0/tiles/9/vodInfo/venderId	integer,供应商id
+漏下发字段：	/sideBar/0/columns/0/tiles/9/vodInfo/doubanScore	string,豆瓣评分
+漏下发字段：	/sideBar/0/columns/0/tiles/9/vodInfo/vendorName	string,提供商名称
+漏下发字段：	/sideBar/0/columns/0/tiles/9/showInfo/postPic	string,竖海报
+漏下发字段：	/sideBar/0/columns/0/tiles/9/showInfo/caroSource	integer,轮播内容来源方式，0-轮播窗口(运营配置)  1-聚看点(猜你喜欢接口，top20)
+漏下发字段：	/sideBar/0/columns/0/tiles/9/showInfo/score	string,分数
+漏下发字段：	/sideBar/0/columns/0/tiles/9/showInfo/price	long,价格,单位为厘，vod根据区分单点，1-非单点，0-单点视频
+漏下发字段：	/sideBar/0/columns/0/tiles/9/showInfo/caroMaskMapSource	integer,1，取推荐位大海报tile.showInfo.frontPic遍历存放到carousel.tile.[i].showInfo.frontPic；默认0
+漏下发字段：	/sideBar/0/columns/0/tiles/9/showInfo/frontPicSmall	string,小海报
+漏下发字段：	/sideBar/0/columns/0/tiles/9/showInfo/desc	string,更多说明（目前主要用于私人影院最下面的文字）
+漏下发字段：	/sideBar/0/columns/0/tiles/9/showInfo/slogan	string,在聚享购/聚好用/聚好玩中表示卖点
+漏下发字段：	/sideBar/0/columns/0/tiles/9/showInfo/caroPlainText	integer,是否纯文本，默认否，0-否 1-是
+漏下发字段：	/sideBar/0/columns/0/tiles/9/showInfo/caroPlayMode	integer,轮播窗/轮播起播模式，0-直接播放，1-点击播放。轮播默认是1，轮播窗默认0
+!!! /sideBar/0/columns/0/tiles/9/logInfo/channelid字段未在sosoapi中录入
+!!! /sideBar/0/columns/0/tiles/9/logInfo/navid字段未在sosoapi中录入
+漏下发字段：	/sideBar/0/columns/0/tiles/9/logInfo/algid	string,original为1推荐时相应的算法id，original为其他时此字段为空
+漏下发字段：	/sideBar/0/columns/0/tiles/9/logInfo/curpageid	string,当前页面id
+漏下发字段：	/sideBar/0/columns/0/tiles/9/logInfo/curpagetype	string,当前页面类型
+漏下发字段：	/sideBar/0/columns/0/tiles/9/vipInfo/vipWillPass	integer,即将过期天数
+漏下发字段：	/sideBar/0/columns/0/tiles/9/vipInfo/packageVipId	string,套餐包ID
+漏下发字段：	/sideBar/0/columns/0/tiles/9/vipInfo/vipDesc	string,描述
+漏下发字段：	/sideBar/0/columns/0/tiles/9/jumpSubTypeCode	string,1.2.3新增，标记会员中心媒资跳转的subtypecode，系统端内部使用
+漏下发字段：	/sideBar/0/columns/0/tiles/9/params	string,跳转参数json
+漏下发字段：	/sideBar/0/columns/0/tiles/9/h5Url	string,h5跳转url
+漏下发字段：	/sideBar/0/columns/0/tiles/9/displayMode	integer,显示模式（1-默认模式、2-会员价模式、3-纯图模式）
+漏下发字段：	/sideBar/0/columns/0/tiles/9/naviId	long,导航id，当typeCode=8008时生效
+漏下发字段：	/sideBar/0/columns/0/tiles/9/adPosId	string,如果此推荐位是广告会下发此字段
+漏下发字段：	/sideBar/0/columns/0/tiles/10/topicInfo/type	integer,专题类型, 5-带tab专题、6-翻页专题, 0-其他
+漏下发字段：	/sideBar/0/columns/0/tiles/10/topicInfo/descPic	string,专题推荐位描述图片
+漏下发字段：	/sideBar/0/columns/0/tiles/10/appInfo/exParam	string,应用跳转json
+漏下发字段：	/sideBar/0/columns/0/tiles/10/appInfo/appUrl	string,h5跳转url
+漏下发字段：	/sideBar/0/columns/0/tiles/10/appInfo/categoryName	string,应用分类,UI没有展示需确认
+漏下发字段：	/sideBar/0/columns/0/tiles/10/appInfo/downloads	long,下载次数
+漏下发字段：	/sideBar/0/columns/0/tiles/10/appInfo/md5Sign	long,套餐id
+漏下发字段：	/sideBar/0/columns/0/tiles/10/appInfo/versionCode	long,版本code
+漏下发字段：	/sideBar/0/columns/0/tiles/10/appInfo/appIcon	string,应用或游戏icon
+漏下发字段：	/sideBar/0/columns/0/tiles/10/vodInfo/cardParentRemind	string,点卡标题
+漏下发字段：	/sideBar/0/columns/0/tiles/10/vodInfo/showDetail	integer,是否直接播放，1是进入详情，0是直接播放
+漏下发字段：	/sideBar/0/columns/0/tiles/10/vodInfo/total	integer,总集数
+漏下发字段：	/sideBar/0/columns/0/tiles/10/vodInfo/timeLength	integer,时长
+漏下发字段：	/sideBar/0/columns/0/tiles/10/vodInfo/cardRemind	string,点卡提示
+漏下发字段：	/sideBar/0/columns/0/tiles/10/vodInfo/cardDesc	string,点卡描述图片
+漏下发字段：	/sideBar/0/columns/0/tiles/10/vodInfo/current	integer,当前集数
+漏下发字段：	/sideBar/0/columns/0/tiles/10/vodInfo/updateMark	string,更新至第XX集
+漏下发字段：	/sideBar/0/columns/0/tiles/10/vodInfo/is_fee	integer,是否付费，1-付费 0-不付费
+漏下发字段：	/sideBar/0/columns/0/tiles/10/vodInfo/episodeIndex	integer,海报跳转视频的集数
+漏下发字段：	/sideBar/0/columns/0/tiles/10/vodInfo/venderId	integer,供应商id
+漏下发字段：	/sideBar/0/columns/0/tiles/10/vodInfo/doubanScore	string,豆瓣评分
+漏下发字段：	/sideBar/0/columns/0/tiles/10/vodInfo/vendorName	string,提供商名称
+漏下发字段：	/sideBar/0/columns/0/tiles/10/showInfo/postPic	string,竖海报
+漏下发字段：	/sideBar/0/columns/0/tiles/10/showInfo/caroSource	integer,轮播内容来源方式，0-轮播窗口(运营配置)  1-聚看点(猜你喜欢接口，top20)
+漏下发字段：	/sideBar/0/columns/0/tiles/10/showInfo/score	string,分数
+漏下发字段：	/sideBar/0/columns/0/tiles/10/showInfo/frontPic	string,海报
+漏下发字段：	/sideBar/0/columns/0/tiles/10/showInfo/price	long,价格,单位为厘，vod根据区分单点，1-非单点，0-单点视频
+漏下发字段：	/sideBar/0/columns/0/tiles/10/showInfo/caroMaskMapSource	integer,1，取推荐位大海报tile.showInfo.frontPic遍历存放到carousel.tile.[i].showInfo.frontPic；默认0
+漏下发字段：	/sideBar/0/columns/0/tiles/10/showInfo/frontPicSmall	string,小海报
+漏下发字段：	/sideBar/0/columns/0/tiles/10/showInfo/desc	string,更多说明（目前主要用于私人影院最下面的文字）
+漏下发字段：	/sideBar/0/columns/0/tiles/10/showInfo/slogan	string,在聚享购/聚好用/聚好玩中表示卖点
+漏下发字段：	/sideBar/0/columns/0/tiles/10/showInfo/caroPlainText	integer,是否纯文本，默认否，0-否 1-是
+漏下发字段：	/sideBar/0/columns/0/tiles/10/showInfo/caroPlayMode	integer,轮播窗/轮播起播模式，0-直接播放，1-点击播放。轮播默认是1，轮播窗默认0
+!!! /sideBar/0/columns/0/tiles/10/logInfo/channelid字段未在sosoapi中录入
+!!! /sideBar/0/columns/0/tiles/10/logInfo/navid字段未在sosoapi中录入
+漏下发字段：	/sideBar/0/columns/0/tiles/10/logInfo/algid	string,original为1推荐时相应的算法id，original为其他时此字段为空
+漏下发字段：	/sideBar/0/columns/0/tiles/10/logInfo/curpageid	string,当前页面id
+漏下发字段：	/sideBar/0/columns/0/tiles/10/logInfo/curpagetype	string,当前页面类型
+漏下发字段：	/sideBar/0/columns/0/tiles/10/vipInfo/vipWillPass	integer,即将过期天数
+漏下发字段：	/sideBar/0/columns/0/tiles/10/vipInfo/packageVipId	string,套餐包ID
+漏下发字段：	/sideBar/0/columns/0/tiles/10/vipInfo/vipDesc	string,描述
+漏下发字段：	/sideBar/0/columns/0/tiles/10/jumpSubTypeCode	string,1.2.3新增，标记会员中心媒资跳转的subtypecode，系统端内部使用
+漏下发字段：	/sideBar/0/columns/0/tiles/10/params	string,跳转参数json
+漏下发字段：	/sideBar/0/columns/0/tiles/10/h5Url	string,h5跳转url
+漏下发字段：	/sideBar/0/columns/0/tiles/10/displayMode	integer,显示模式（1-默认模式、2-会员价模式、3-纯图模式）
+漏下发字段：	/sideBar/0/columns/0/tiles/10/naviId	long,导航id，当typeCode=8008时生效
+漏下发字段：	/sideBar/0/columns/0/tiles/10/adPosId	string,如果此推荐位是广告会下发此字段
+漏下发字段：	/sideBar/0/columns/0/tiles/11/topicInfo/type	integer,专题类型, 5-带tab专题、6-翻页专题, 0-其他
+漏下发字段：	/sideBar/0/columns/0/tiles/11/topicInfo/descPic	string,专题推荐位描述图片
+漏下发字段：	/sideBar/0/columns/0/tiles/11/appInfo/exParam	string,应用跳转json
+漏下发字段：	/sideBar/0/columns/0/tiles/11/appInfo/appUrl	string,h5跳转url
+漏下发字段：	/sideBar/0/columns/0/tiles/11/appInfo/categoryName	string,应用分类,UI没有展示需确认
+漏下发字段：	/sideBar/0/columns/0/tiles/11/appInfo/downloads	long,下载次数
+漏下发字段：	/sideBar/0/columns/0/tiles/11/appInfo/md5Sign	long,套餐id
+漏下发字段：	/sideBar/0/columns/0/tiles/11/appInfo/versionCode	long,版本code
+漏下发字段：	/sideBar/0/columns/0/tiles/11/appInfo/appIcon	string,应用或游戏icon
+漏下发字段：	/sideBar/0/columns/0/tiles/11/vodInfo/cardParentRemind	string,点卡标题
+漏下发字段：	/sideBar/0/columns/0/tiles/11/vodInfo/showDetail	integer,是否直接播放，1是进入详情，0是直接播放
+漏下发字段：	/sideBar/0/columns/0/tiles/11/vodInfo/total	integer,总集数
+漏下发字段：	/sideBar/0/columns/0/tiles/11/vodInfo/timeLength	integer,时长
+漏下发字段：	/sideBar/0/columns/0/tiles/11/vodInfo/cardRemind	string,点卡提示
+漏下发字段：	/sideBar/0/columns/0/tiles/11/vodInfo/cardDesc	string,点卡描述图片
+漏下发字段：	/sideBar/0/columns/0/tiles/11/vodInfo/current	integer,当前集数
+漏下发字段：	/sideBar/0/columns/0/tiles/11/vodInfo/updateMark	string,更新至第XX集
+漏下发字段：	/sideBar/0/columns/0/tiles/11/vodInfo/is_fee	integer,是否付费，1-付费 0-不付费
+漏下发字段：	/sideBar/0/columns/0/tiles/11/vodInfo/episodeIndex	integer,海报跳转视频的集数
+漏下发字段：	/sideBar/0/columns/0/tiles/11/vodInfo/venderId	integer,供应商id
+漏下发字段：	/sideBar/0/columns/0/tiles/11/vodInfo/doubanScore	string,豆瓣评分
+漏下发字段：	/sideBar/0/columns/0/tiles/11/vodInfo/vendorName	string,提供商名称
+漏下发字段：	/sideBar/0/columns/0/tiles/11/showInfo/postPic	string,竖海报
+漏下发字段：	/sideBar/0/columns/0/tiles/11/showInfo/caroSource	integer,轮播内容来源方式，0-轮播窗口(运营配置)  1-聚看点(猜你喜欢接口，top20)
+漏下发字段：	/sideBar/0/columns/0/tiles/11/showInfo/score	string,分数
+漏下发字段：	/sideBar/0/columns/0/tiles/11/showInfo/frontPic	string,海报
+漏下发字段：	/sideBar/0/columns/0/tiles/11/showInfo/price	long,价格,单位为厘，vod根据区分单点，1-非单点，0-单点视频
+漏下发字段：	/sideBar/0/columns/0/tiles/11/showInfo/caroMaskMapSource	integer,1，取推荐位大海报tile.showInfo.frontPic遍历存放到carousel.tile.[i].showInfo.frontPic；默认0
+漏下发字段：	/sideBar/0/columns/0/tiles/11/showInfo/frontPicSmall	string,小海报
+漏下发字段：	/sideBar/0/columns/0/tiles/11/showInfo/desc	string,更多说明（目前主要用于私人影院最下面的文字）
+漏下发字段：	/sideBar/0/columns/0/tiles/11/showInfo/slogan	string,在聚享购/聚好用/聚好玩中表示卖点
+漏下发字段：	/sideBar/0/columns/0/tiles/11/showInfo/caroPlainText	integer,是否纯文本，默认否，0-否 1-是
+漏下发字段：	/sideBar/0/columns/0/tiles/11/showInfo/caroPlayMode	integer,轮播窗/轮播起播模式，0-直接播放，1-点击播放。轮播默认是1，轮播窗默认0
+!!! /sideBar/0/columns/0/tiles/11/logInfo/channelid字段未在sosoapi中录入
+!!! /sideBar/0/columns/0/tiles/11/logInfo/navid字段未在sosoapi中录入
+漏下发字段：	/sideBar/0/columns/0/tiles/11/logInfo/algid	string,original为1推荐时相应的算法id，original为其他时此字段为空
+漏下发字段：	/sideBar/0/columns/0/tiles/11/logInfo/curpageid	string,当前页面id
+漏下发字段：	/sideBar/0/columns/0/tiles/11/logInfo/curpagetype	string,当前页面类型
+漏下发字段：	/sideBar/0/columns/0/tiles/11/vipInfo/vipWillPass	integer,即将过期天数
+漏下发字段：	/sideBar/0/columns/0/tiles/11/vipInfo/packageVipId	string,套餐包ID
+漏下发字段：	/sideBar/0/columns/0/tiles/11/vipInfo/vipDesc	string,描述
+漏下发字段：	/sideBar/0/columns/0/tiles/11/jumpSubTypeCode	string,1.2.3新增，标记会员中心媒资跳转的subtypecode，系统端内部使用
+漏下发字段：	/sideBar/0/columns/0/tiles/11/params	string,跳转参数json
+漏下发字段：	/sideBar/0/columns/0/tiles/11/h5Url	string,h5跳转url
+漏下发字段：	/sideBar/0/columns/0/tiles/11/displayMode	integer,显示模式（1-默认模式、2-会员价模式、3-纯图模式）
+漏下发字段：	/sideBar/0/columns/0/tiles/11/naviId	long,导航id，当typeCode=8008时生效
+漏下发字段：	/sideBar/0/columns/0/tiles/11/adPosId	string,如果此推荐位是广告会下发此字段
+漏下发字段：	/sideBar/0/columns/0/tiles/12/topicInfo/type	integer,专题类型, 5-带tab专题、6-翻页专题, 0-其他
+漏下发字段：	/sideBar/0/columns/0/tiles/12/topicInfo/descPic	string,专题推荐位描述图片
+漏下发字段：	/sideBar/0/columns/0/tiles/12/appInfo/exParam	string,应用跳转json
+漏下发字段：	/sideBar/0/columns/0/tiles/12/appInfo/appUrl	string,h5跳转url
+漏下发字段：	/sideBar/0/columns/0/tiles/12/appInfo/categoryName	string,应用分类,UI没有展示需确认
+漏下发字段：	/sideBar/0/columns/0/tiles/12/appInfo/downloads	long,下载次数
+漏下发字段：	/sideBar/0/columns/0/tiles/12/appInfo/md5Sign	long,套餐id
+漏下发字段：	/sideBar/0/columns/0/tiles/12/appInfo/versionCode	long,版本code
+漏下发字段：	/sideBar/0/columns/0/tiles/12/appInfo/appIcon	string,应用或游戏icon
+漏下发字段：	/sideBar/0/columns/0/tiles/12/vodInfo/cardParentRemind	string,点卡标题
+漏下发字段：	/sideBar/0/columns/0/tiles/12/vodInfo/showDetail	integer,是否直接播放，1是进入详情，0是直接播放
+漏下发字段：	/sideBar/0/columns/0/tiles/12/vodInfo/total	integer,总集数
+漏下发字段：	/sideBar/0/columns/0/tiles/12/vodInfo/timeLength	integer,时长
+漏下发字段：	/sideBar/0/columns/0/tiles/12/vodInfo/cardRemind	string,点卡提示
+漏下发字段：	/sideBar/0/columns/0/tiles/12/vodInfo/cardDesc	string,点卡描述图片
+漏下发字段：	/sideBar/0/columns/0/tiles/12/vodInfo/current	integer,当前集数
+漏下发字段：	/sideBar/0/columns/0/tiles/12/vodInfo/updateMark	string,更新至第XX集
+漏下发字段：	/sideBar/0/columns/0/tiles/12/vodInfo/is_fee	integer,是否付费，1-付费 0-不付费
+漏下发字段：	/sideBar/0/columns/0/tiles/12/vodInfo/episodeIndex	integer,海报跳转视频的集数
+漏下发字段：	/sideBar/0/columns/0/tiles/12/vodInfo/venderId	integer,供应商id
+漏下发字段：	/sideBar/0/columns/0/tiles/12/vodInfo/doubanScore	string,豆瓣评分
+漏下发字段：	/sideBar/0/columns/0/tiles/12/vodInfo/vendorName	string,提供商名称
+漏下发字段：	/sideBar/0/columns/0/tiles/12/showInfo/postPic	string,竖海报
+漏下发字段：	/sideBar/0/columns/0/tiles/12/showInfo/caroSource	integer,轮播内容来源方式，0-轮播窗口(运营配置)  1-聚看点(猜你喜欢接口，top20)
+漏下发字段：	/sideBar/0/columns/0/tiles/12/showInfo/score	string,分数
+漏下发字段：	/sideBar/0/columns/0/tiles/12/showInfo/frontPic	string,海报
+漏下发字段：	/sideBar/0/columns/0/tiles/12/showInfo/price	long,价格,单位为厘，vod根据区分单点，1-非单点，0-单点视频
+漏下发字段：	/sideBar/0/columns/0/tiles/12/showInfo/caroMaskMapSource	integer,1，取推荐位大海报tile.showInfo.frontPic遍历存放到carousel.tile.[i].showInfo.frontPic；默认0
+漏下发字段：	/sideBar/0/columns/0/tiles/12/showInfo/frontPicSmall	string,小海报
+漏下发字段：	/sideBar/0/columns/0/tiles/12/showInfo/desc	string,更多说明（目前主要用于私人影院最下面的文字）
+漏下发字段：	/sideBar/0/columns/0/tiles/12/showInfo/slogan	string,在聚享购/聚好用/聚好玩中表示卖点
+漏下发字段：	/sideBar/0/columns/0/tiles/12/showInfo/caroPlainText	integer,是否纯文本，默认否，0-否 1-是
+漏下发字段：	/sideBar/0/columns/0/tiles/12/showInfo/caroPlayMode	integer,轮播窗/轮播起播模式，0-直接播放，1-点击播放。轮播默认是1，轮播窗默认0
+!!! /sideBar/0/columns/0/tiles/12/logInfo/channelid字段未在sosoapi中录入
+!!! /sideBar/0/columns/0/tiles/12/logInfo/navid字段未在sosoapi中录入
+漏下发字段：	/sideBar/0/columns/0/tiles/12/logInfo/algid	string,original为1推荐时相应的算法id，original为其他时此字段为空
+漏下发字段：	/sideBar/0/columns/0/tiles/12/logInfo/curpageid	string,当前页面id
+漏下发字段：	/sideBar/0/columns/0/tiles/12/logInfo/curpagetype	string,当前页面类型
+漏下发字段：	/sideBar/0/columns/0/tiles/12/vipInfo/vipWillPass	integer,即将过期天数
+漏下发字段：	/sideBar/0/columns/0/tiles/12/vipInfo/vipDesc	string,描述
+漏下发字段：	/sideBar/0/columns/0/tiles/12/jumpSubTypeCode	string,1.2.3新增，标记会员中心媒资跳转的subtypecode，系统端内部使用
+漏下发字段：	/sideBar/0/columns/0/tiles/12/params	string,跳转参数json
+漏下发字段：	/sideBar/0/columns/0/tiles/12/h5Url	string,h5跳转url
+漏下发字段：	/sideBar/0/columns/0/tiles/12/displayMode	integer,显示模式（1-默认模式、2-会员价模式、3-纯图模式）
+漏下发字段：	/sideBar/0/columns/0/tiles/12/naviId	long,导航id，当typeCode=8008时生效
+漏下发字段：	/sideBar/0/columns/0/tiles/12/adPosId	string,如果此推荐位是广告会下发此字段
+漏下发字段：	/sideBar/0/columns/0/tiles/13/topicInfo/type	integer,专题类型, 5-带tab专题、6-翻页专题, 0-其他
+漏下发字段：	/sideBar/0/columns/0/tiles/13/topicInfo/descPic	string,专题推荐位描述图片
+漏下发字段：	/sideBar/0/columns/0/tiles/13/appInfo/exParam	string,应用跳转json
+漏下发字段：	/sideBar/0/columns/0/tiles/13/appInfo/appUrl	string,h5跳转url
+漏下发字段：	/sideBar/0/columns/0/tiles/13/appInfo/categoryName	string,应用分类,UI没有展示需确认
+漏下发字段：	/sideBar/0/columns/0/tiles/13/appInfo/downloads	long,下载次数
+漏下发字段：	/sideBar/0/columns/0/tiles/13/appInfo/md5Sign	long,套餐id
+漏下发字段：	/sideBar/0/columns/0/tiles/13/appInfo/versionCode	long,版本code
+漏下发字段：	/sideBar/0/columns/0/tiles/13/appInfo/appIcon	string,应用或游戏icon
+!!!/sideBar/0/columns/0/tiles/13/gotoInfo/gotoType = 0(string),But sosoapi:integer,0 – 本地； 1 – {htType==single_vip:h5跳转参数；h5Type==user_right_vip:h5会员权益跳转地址}
+漏下发字段：	/sideBar/0/columns/0/tiles/13/vodInfo/cardParentRemind	string,点卡标题
+漏下发字段：	/sideBar/0/columns/0/tiles/13/vodInfo/showDetail	integer,是否直接播放，1是进入详情，0是直接播放
+漏下发字段：	/sideBar/0/columns/0/tiles/13/vodInfo/total	integer,总集数
+漏下发字段：	/sideBar/0/columns/0/tiles/13/vodInfo/timeLength	integer,时长
+漏下发字段：	/sideBar/0/columns/0/tiles/13/vodInfo/cardRemind	string,点卡提示
+漏下发字段：	/sideBar/0/columns/0/tiles/13/vodInfo/cardDesc	string,点卡描述图片
+漏下发字段：	/sideBar/0/columns/0/tiles/13/vodInfo/current	integer,当前集数
+漏下发字段：	/sideBar/0/columns/0/tiles/13/vodInfo/updateMark	string,更新至第XX集
+漏下发字段：	/sideBar/0/columns/0/tiles/13/vodInfo/is_fee	integer,是否付费，1-付费 0-不付费
+漏下发字段：	/sideBar/0/columns/0/tiles/13/vodInfo/episodeIndex	integer,海报跳转视频的集数
+漏下发字段：	/sideBar/0/columns/0/tiles/13/vodInfo/venderId	integer,供应商id
+漏下发字段：	/sideBar/0/columns/0/tiles/13/vodInfo/doubanScore	string,豆瓣评分
+漏下发字段：	/sideBar/0/columns/0/tiles/13/vodInfo/vendorName	string,提供商名称
+!!! /sideBar/0/columns/0/tiles/13/logInfo/channelid字段未在sosoapi中录入
+!!! /sideBar/0/columns/0/tiles/13/logInfo/navid字段未在sosoapi中录入
+漏下发字段：	/sideBar/0/columns/0/tiles/13/logInfo/algid	string,original为1推荐时相应的算法id，original为其他时此字段为空
+漏下发字段：	/sideBar/0/columns/0/tiles/13/logInfo/curpageid	string,当前页面id
+漏下发字段：	/sideBar/0/columns/0/tiles/13/logInfo/curpagetype	string,当前页面类型
+漏下发字段：	/sideBar/0/columns/0/tiles/13/vipInfo/vipWillPass	integer,即将过期天数
+漏下发字段：	/sideBar/0/columns/0/tiles/13/vipInfo/vipDesc	string,描述
+漏下发字段：	/sideBar/0/columns/0/tiles/13/jumpSubTypeCode	string,1.2.3新增，标记会员中心媒资跳转的subtypecode，系统端内部使用
+漏下发字段：	/sideBar/0/columns/0/tiles/13/h5Url	string,h5跳转url
+漏下发字段：	/sideBar/0/columns/0/tiles/13/displayMode	integer,显示模式（1-默认模式、2-会员价模式、3-纯图模式）
+漏下发字段：	/sideBar/0/columns/0/tiles/13/naviId	long,导航id，当typeCode=8008时生效
+漏下发字段：	/sideBar/0/columns/0/tiles/13/adPosId	string,如果此推荐位是广告会下发此字段
+漏下发字段：	/sideBar/0/columns/0/thirdId	string,第三方栏目id：=15京东秒杀
+漏下发字段：	/sideBar/0/columns/0/orientation	integer,栏目自定义模板样式， 1-横向 从左到右，2-纵向 从上到下
+漏下发字段：	/sideBar/0/columns/0/colMaxSize	integer,自定义模板：orientation =1时栏目宽度，orientation =2时栏目高度
+漏下发字段：	/sideBar/0/columns/0/templateGroup	string,栏目组合模板
+漏下发字段：	/sideBar/0/columns/0/backColor2	string,栏目背景色-渐变色2（本版本仅适用于京东栏目）
+漏下发字段：	/sideBar/0/columns/0/algId	string,智能推荐栏目算法ID
+漏下发字段：	/sideBar/0/columns/0/columnBackImage	string,栏目背景图
+漏下发字段：	/sideBar/0/columns/0/backColor1	string,栏目背景色-渐变色1（本版本仅适用于京东栏目）
+漏下发字段：	/sideBar/0/columns/0/subType	integer,type=6或7： 2-下载，3-好评榜，4-游戏榜，5-软件榜，6-新秀榜，7-猜你喜欢  type=9： 91-教育通知区 92-教育频道定制区 93-一键优化 94-我的应用(定制)  95-历史记录(会员中心)-1.2.3新增 type=12： 121-京东购物透传栏目 122-京东家居透传栏目 
+漏下发字段：	/sideBar/0/columns/0/eduChannelId	integer,仅type=5时，有效
+!!! /sideBar/0/isWaterfall字段未在sosoapi中录入
+漏下发字段：	/sideBar/0/chanFocusIconImage	string,频道图标焦点图
+漏下发字段：	/sideBar/0/chanIconImage	string,频道图标默认图
+漏下发字段：	/sideBar/0/marker	string,频道右上角标识（目前仅用于教育VIP标识，后续可能扩展）；注意并非频道图标
+漏下发字段：	/sideBar/0/chanLeftIconImage	string,频道图标遗留图
+!!! /sideBar/1/chanModifiedTime字段未在sosoapi中录入
+!!! /sideBar/1/isWaterfall字段未在sosoapi中录入
+漏下发字段：	/sideBar/1/chanFocusIconImage	string,频道图标焦点图
+漏下发字段：	/sideBar/1/chanIconImage	string,频道图标默认图
+漏下发字段：	/sideBar/1/metaInfo	string,下一页地址
+漏下发字段：	/sideBar/1/marker	string,频道右上角标识（目前仅用于教育VIP标识，后续可能扩展）；注意并非频道图标
+漏下发字段：	/sideBar/1/chanLeftIconImage	string,频道图标遗留图
