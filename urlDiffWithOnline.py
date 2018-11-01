@@ -5,6 +5,28 @@ import requests
 import re
 import sys
 
+def compare_arr(arrA,arrB,prefix):
+    key='id'
+    length=len(arrA)
+    for i in xrange(length):
+        if key in arrA[i]:
+            target=-1
+            for j in xrange(len(arrB)):
+                if key in arrB[j] and arrB[j][key]==arrA[i][key]:
+                    target=j
+                    itemB=json.loads(json.dumps(arrB[j]))
+                    json_compare(arrA[i],itemB,prefix+str(i)+'/')
+                    del arrB[j] 
+                    break
+            if target == -1:
+                print "多下发数组元素 "+prefix+str(i)+"/,值为："+json.dumps(arrA[i]).decode("unicode-escape")[0:110]+"..."
+        else:
+            print "数组"+prefix+"元素不含id"
+            return
+    for item in arrB:
+        print "漏下发数组元素 "+prefix+",值为："+json.dumps(item).decode("unicode-escape")[0:110]+"..."
+        
+
 def json_compare(jsonA,jsonB,prefix):
     for item in jsonA:
 	if item in jsonB:
@@ -20,6 +42,7 @@ def json_compare(jsonA,jsonB,prefix):
                     del jsonB[item]
                 else:
                     print "数组长度不一致:\t"+prefix+item+"\t"+ str(len(jsonA[item]))+"!="+ str(len(jsonB[item]))
+                    compare_arr(jsonA[item],jsonB[item],prefix+item+'/')
                     del jsonB[item]
             elif isinstance(jsonA[item],dict):
                 json_compare(jsonA[item],jsonB[item],prefix+item+'/')
