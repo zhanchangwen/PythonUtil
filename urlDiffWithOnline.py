@@ -9,6 +9,9 @@ def compare_arr(arrA,arrB,prefix):
     key='id'
     length=len(arrA)
     for i in xrange(length):
+        if isinstance(arrA[i],dict) == False:
+            print prefix+"该数组的元素非对象"
+            return
         if key in arrA[i]:
             target=-1
             for j in xrange(len(arrB)):
@@ -19,12 +22,12 @@ def compare_arr(arrA,arrB,prefix):
                     del arrB[j] 
                     break
             if target == -1:
-                print "多下发数组元素 "+prefix+str(i)+"/,值为："+json.dumps(arrA[i]).decode("unicode-escape")[0:110]+"..."
+                print "多下发数组元素 "+prefix+str(i)+"/,值为："+json.dumps(arrA[i]).decode("unicode-escape")[0:500]+"..."
         else:
             print "数组"+prefix+"元素不含id"
             return
     for item in arrB:
-        print "漏下发数组元素 "+prefix+",值为："+json.dumps(item).decode("unicode-escape")[0:110]+"..."
+        print "漏下发数组元素 "+prefix+",值为："+json.dumps(item).decode("unicode-escape")[0:500]+"..."
         
 
 def json_compare(jsonA,jsonB,prefix):
@@ -32,13 +35,14 @@ def json_compare(jsonA,jsonB,prefix):
 	if item in jsonB:
             if isinstance(jsonA[item],list):
                 if len(jsonA[item]) == len(jsonB[item]):
-                    length = len(jsonA[item])
-                    for i in range(0,length):
-                        if isinstance(jsonA[item][i],dict):
-                            json_compare(jsonA[item][i],jsonB[item][i],prefix+item+'/'+str(i)+'/')
-                        else:
-                            if jsonA[item][i] != jsonB[item][i]:
-                                print "warining: "+prefix+item+" 数组的元素类型非对象,且元素值不一致"
+                    compare_arr(jsonA[item],jsonB[item],prefix+item+'/')
+                    #length = len(jsonA[item])
+                    #for i in range(0,length):
+                    #    if isinstance(jsonA[item][i],dict):
+                    #        json_compare(jsonA[item][i],jsonB[item][i],prefix+item+'/'+str(i)+'/')
+                    #    else:
+                    #        if jsonA[item][i] != jsonB[item][i]:
+                    #            print "warining: "+prefix+item+" 数组的元素类型非对象,且元素值不一致"
                     del jsonB[item]
                 else:
                     print "数组长度不一致:\t"+prefix+item+"\t"+ str(len(jsonA[item]))+"!="+ str(len(jsonB[item]))
