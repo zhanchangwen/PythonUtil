@@ -9,25 +9,22 @@ def compare_arr(arrA,arrB,prefix):
     key='id'
     length=len(arrA)
     for i in xrange(length):
-        if isinstance(arrA[i],dict) == False:
-            print prefix+"该数组的元素非对象"
-            return
         if key in arrA[i]:
             target=-1
             for j in xrange(len(arrB)):
-                if key in arrB[j] and int(arrB[j][key])==int(arrA[i][key]):
+                if key in arrB[j] and arrB[j][key]==arrA[i][key]:
                     target=j
                     itemB=json.loads(json.dumps(arrB[j]))
                     json_compare(arrA[i],itemB,prefix+str(i)+'/')
                     del arrB[j] 
                     break
             if target == -1:
-                print "多下发数组元素 "+prefix+str(i)+"/,值为："+json.dumps(arrA[i]).decode("unicode-escape")[0:500]+"..."
+                print "多下发数组元素 "+prefix+str(i)+"/,值为："+json.dumps(arrA[i]).decode("unicode-escape")[0:110]+"..."
         else:
             print "数组"+prefix+"元素不含id"
             return
     for item in arrB:
-        print "漏下发数组元素 "+prefix+"[],值为："+json.dumps(item).decode("unicode-escape")[0:500]+"..."
+        print "漏下发数组元素 "+prefix+",值为："+json.dumps(item).decode("unicode-escape")[0:110]+"..."
         
 
 def json_compare(jsonA,jsonB,prefix):
@@ -35,14 +32,13 @@ def json_compare(jsonA,jsonB,prefix):
 	if item in jsonB:
             if isinstance(jsonA[item],list):
                 if len(jsonA[item]) == len(jsonB[item]):
-                    compare_arr(jsonA[item],jsonB[item],prefix+item+'/')
-                    #length = len(jsonA[item])
-                    #for i in range(0,length):
-                    #    if isinstance(jsonA[item][i],dict):
-                    #        json_compare(jsonA[item][i],jsonB[item][i],prefix+item+'/'+str(i)+'/')
-                    #    else:
-                    #        if jsonA[item][i] != jsonB[item][i]:
-                    #            print "warining: "+prefix+item+" 数组的元素类型非对象,且元素值不一致"
+                    length = len(jsonA[item])
+                    for i in range(0,length):
+                        if isinstance(jsonA[item][i],dict):
+                            json_compare(jsonA[item][i],jsonB[item][i],prefix+item+'/'+str(i)+'/')
+                        else:
+                            if jsonA[item][i] != jsonB[item][i]:
+                                print "warining: "+prefix+item+" 数组的元素类型非对象,且元素值不一致"
                     del jsonB[item]
                 else:
                     print "数组长度不一致:\t"+prefix+item+"\t"+ str(len(jsonA[item]))+"!="+ str(len(jsonB[item]))
@@ -70,7 +66,9 @@ def url_response_compare(urlA,urlB):
     json_compare(jsonA,jsonB,'/')
 
 def url_check(url):
-    urlB=url.replace('10.18.217.220','home-launcher.hismarttv.com')
+    urlB=url.replace('10.18.217.24:30350','10.18.220.101:11299')
+    print("Url:",url)
+    print("UrlB:",urlB)
     url_response_compare(url,urlB)
 
 if __name__ == '__main__':
