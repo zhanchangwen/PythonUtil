@@ -1,0 +1,371 @@
+{
+  "resultCode": "integer,操作结果： 0.操作成功 1.操作失败(操作失败的情况参见统一错误处理) 2.内容没有变化（此时不再返回sideBar）",
+  "topicInfos": [
+    {
+      "id": "integer,id",
+      "name": "string,专题名称",
+      "type": "integer,专题类型：1-单行专题 2-图片专题 3-多内容专题 4-带视频专题 7-会员专题",
+      "bgPic": "string,专题背景图",
+      "showType": "integer,资源排列方式：0-横向 1-纵向",
+      "isCollection": "integer,是否显示手册按钮：0-否 1-是",
+      "columns": {
+        "": {
+          "index": "integer,位置号",
+          "title": "string,栏目的标题",
+          "id": "integer,各聚栏目id",
+          "thirdId": "string,第三方栏目id：=15京东秒杀",
+          "type": "integer,1-我的应用,2-公共栏目,4-影视自动生成栏目,5-教育自动生成栏目,6-应用自动生成栏目,7-游戏自动生成栏目,8-购物自动生成栏目,9-虚拟栏目,10-混合栏目,11-推荐栏目, 12-京东栏目,99-瀑布流",
+          "subType": "integer,type=6或7： 2-下载，3-好评榜，4-游戏榜，5-软件榜，6-新秀榜，7-猜你喜欢  type=9： 91-教育通知区 92-教育频道定制区 93-一键优化 94-我的应用(定制)  95-历史记录(会员中心)-1.2.3新增 type=12： 121-京东购物透传栏目 122-京东家居透传栏目 ",
+          "visible": "integer,是否显示栏目（用于控制独家频道是否显示） 1显示，0不显示",
+          "titleVisible": "integer,是否显示栏目标题（默认显示） 1显示，0不显示",
+          "mediaTitleVisible": "integer,是否显示推荐位主标题（默认显示） 1显示，0不显示",
+          "mediaSubTitleVisible": "integer,是否显示推荐位副标题（默认显示） 1显示，0不显示",
+          "templateId": "integer,模板id,参考UXD-栏目模板 -1表示动态模板",
+          "templateType": "integer,模板类型 1-固定模板、2-普通自定义模板、3-圆形自定义模板、4-动态模板",
+          "minColumnRecCount": "integer,栏目推荐媒资数量，默认为0，大于0时生效",
+          "sloganVisible": "integer,Slogon是否显示，1显示，0不显示",
+          "eduChannelId": "integer,仅type=5时，有效",
+          "colHeight": "integer,栏目的高度",
+          "recWidth": "integer,推荐位宽度",
+          "tiles": [
+            {
+              "index": "integer,位置号",
+              "productCode": "string,所属产品,1-影视2-教育3-购物4-应用5-游戏 6-轮播7-直播8-Launcher 9-其他 10-广告 14-嗨唱 16-手机聚好看 18-BOS",
+              "typeCode": "string,见公共返回值typeCode说明",
+              "subTypeCode": "string,用于存放二级页在业务中的typeCode（OP编排二级页列表中的id）",
+              "id": "long,媒资id，不全局唯一",
+              "adPosId": "string,如果此推荐位是广告会下发此字段",
+              "h5Url": "string,h5跳转url",
+              "params": "string,跳转参数json",
+              "original": "integer,媒资来源 0-运营编排 1-智能推荐",
+              "showInfo": {
+                "title": "string,主标题",
+                "subTitle": "string,副标题",
+                "voiceTitle": "string,直达词",
+                "slogan": "string,在聚享购/聚好用/聚好玩中表示卖点",
+                "frontPic": "string,海报",
+                "postPic": "string,竖海报",
+                "frontPicSmall": "string,小海报",
+                "focusPic": "string,获取焦点海报",
+                "isSpecialPic": "integer,是否异形图：0-否，1-是",
+                "width": "integer,宽度",
+                "height": "integer,高度",
+                "desc": "string,更多说明（目前主要用于私人影院最下面的文字）",
+                "price": "long,价格,单位为厘，vod根据区分单点，1-非单点，0-单点视频",
+                "priceVisible": "integer,价格是否显示，1显示，0不显示",
+                "score": "string,分数",
+                "mark": [
+                  {
+                    "pos": "integer,1,左上 2,右上 3,左下 4,右下",
+                    "picUrl": "string,角标url"
+                  }
+                ],
+                "bgColor1": "string,收藏等特殊推荐位使用的背景色",
+                "bgColor2": "string,收藏等特殊推荐位使用的背景色",
+                "showMark": "integer,是否显示角标 0-不显示，1-显示",
+                "caroPlayMode": "integer,轮播窗/轮播起播模式，0-直接播放，1-点击播放。轮播默认是1，轮播窗默认0",
+                "caroSource": "integer,轮播内容来源方式，0-轮播窗口(运营配置)  1-聚看点(猜你喜欢接口，top20)",
+                "caroPlainText": "integer,是否纯文本，默认否，0-否 1-是",
+                "topHotVisible": "integer,控制近期热点是否展示，默认否，当该值为1时，显示，其他情况均不显示；1.2.2新增",
+                "caroMaskMapSource": "integer,1，取推荐位大海报tile.showInfo.frontPic遍历存放到carousel.tile.[i].showInfo.frontPic；默认0",
+                "bgPic": "string,背景海报"
+              },
+              "appInfo": {
+                "appIcon": "string,应用或游戏icon",
+                "downloads": "long,下载次数",
+                "packageName": "string,App名称",
+                "exParam": "string,应用跳转json",
+                "appUrl": "string,h5跳转url",
+                "md5Sign": "long,套餐id",
+                "versionCode": "long,版本code",
+                "categoryName": "string,应用分类,UI没有展示需确认",
+                "tagInfo": [
+                  {
+                    "tagId": "integer,id",
+                    "tagName": "string,name"
+                  }
+                ],
+                "appRelatedPics": [
+                  {}
+                ],
+                "controlModeLi": [
+                  {
+                    "controlModeId": "integer,id",
+                    "controlName": "string,name"
+                  }
+                ]
+              },
+              "goodsInfo": {
+                "marketPrice": "long,原价，单位为厘",
+                "sellPercent": "string,商品已售百分比，不带%",
+                "objectSn": "string,商品号",
+                "saleMode": "integer,是否电话购物",
+                "serviceTelephone": "string,订购电话",
+                "picture": "string,商品海报图"
+              },
+              "vodInfo": {
+                "doubanScore": "string,豆瓣评分",
+                "showDetail": "integer,是否直接播放，1是进入详情，0是直接播放",
+                "total": "integer,总集数",
+                "current": "integer,当前集数",
+                "updateMark": "string,更新至第XX集",
+                "subColumnId": "string,聚好看二级栏目ID",
+                "venderId": "integer,供应商id",
+                "vendorName": "string,提供商名称",
+                "vipId": [
+                  {}
+                ],
+                "cardParentRemind": "string,点卡标题",
+                "cardRemind": "string,点卡提示",
+                "cardDesc": "string,点卡描述图片",
+                "episodeIndex": "integer,海报跳转视频的集数",
+                "timeLength": "integer,时长",
+                "is_fee": "integer,是否付费，1-付费 0-不付费",
+                "childCategory": [
+                  {}
+                ],
+                "pubdate": "string,发布日期",
+                "country": "string,国家"
+              },
+              "mvodInfo": {
+                "thirdChannelId": "string,手机聚好看直播频道第三方频道",
+                "thirdTvChannelId": "string,手机聚好看直播频道第三方电视频道",
+                "filters": "string,分类筛选条件  1.2.3新增"
+              },
+              "channel": {
+                "thirdId": "integer,第三方频道id",
+                "type": "integer,频道类型，1-轮播，2-直播",
+                "subType": "integer,频道子类型， 轮播：0-暂无子类型 直播：1-现场直播，2-电台直播",
+                "categoryId": "string,频道所属轮播分类id",
+                "vendor": "string,直播间归属运营商，0000-海信,1001-搜狐,1002-爱奇艺,1003-聚享购,1004-CNTV,1005-聚联播,1006-PPTV,1007-优酷,1008-优朋,1009-乐视,1011-腾讯,1012-微信电视,1013-芒果,1014-聚好玩,1015-华数,1016-明流,1017-4k花园",
+                "provider": "string,内容提供商",
+                "free": "integer,0-收费，1-免费",
+                "tollAlone": "long,单点价格id，没有单点价格id在返回值中去掉该段",
+                "price": "long,价格，单位是厘（人民币）",
+                "priceVaildPeriod": "long,价格有效期，单位小时",
+                "isShowChannelInfo": "integer,是否显示频道信息，默认1 枚举值：0-否、1-是, ",
+                "channelProductId": "integer,轮播所属产品，默认0 枚举值：0-通用、1-视频、2-教育、3-购物、4-游戏、5-应用, "
+              },
+              "eduInfo": {
+                "total": "integer,总集数",
+                "current": "integer,当前集数",
+                "updateMark": "string,更新至第XX集",
+                "imagePostUrlNew": "string,遮挡图海报"
+              },
+              "carousel": [
+                {}
+              ],
+              "carouselInfo": {
+                "videoUrl": "string,视频url",
+                "playParams": {
+                  "id": "integer,id",
+                  "name": "string,name",
+                  "fee": "integer,fee",
+                  "video_play_url": "string,video_play_url",
+                  "video_play_param": "string,video_play_param",
+                  "video_quality": "string,video_quality"
+                },
+                "isJump": "integer,点击小图标后是否跳转： 0-否 1-是",
+                "jumpParams": "string,跳转参数（适用于跳转到第三方应用的场景）",
+                "buttonMarkWord": "string,按钮提示语，如“点击OK键查看详情”",
+                "categoryId": "integer,聚好看媒资分类ID（多个取第一个）",
+                "channelId": "integer,聚好学媒资所属频道ID（多个取第一个）",
+                "jumpMode": "integer,轮播窗推荐位--跳转模式，默认1  1-大屏播放模式、2-直接跳转模式"
+              },
+              "vipInfo": {
+                "packageVipId": "string,套餐包ID",
+                "vipId": "integer,套餐ID",
+                "vipWillPass": "integer,即将过期天数",
+                "vipDesc": "string,描述"
+              },
+              "topicInfo": {
+                "type": "integer,专题类型, 5-带tab专题、6-翻页专题, 0-其他",
+                "desc": "string,专题推荐位描述",
+                "descPic": "string,专题推荐位描述图片",
+                "star": "string,专题推荐位推荐指数"
+              },
+              "couponInfo": {
+                "useRangeDesc": "string,使用范围描述",
+                "useDesc": "string,使用描述",
+                "horizontalPic": "string,横版背景图",
+                "verticalPic": "string,竖版背景图",
+                "remainingNum": "integer,剩余总数量",
+                "validStartTime": "long,生效时间（类型：utc时间，单位s）",
+                "validEndTime": "long,失效时间（类型：utc时间，单位s）",
+                "account": "string,面额",
+                "limitNum": "integer,每个用户限领数量",
+                "receiveNum": "integer,当前用户已领数量"
+              },
+              "shortMediaInfo": [
+                {
+                  "shortMediaId": "long,短视频集锦ID",
+                  "videoId": "long,Video ID",
+                  "title": "string,短视频标题",
+                  "frontPic": "string,海报",
+                  "frontPicSmall": "string,小海报",
+                  "focusPic": "string,获取焦点海报"
+                }
+              ],
+              "sportsInfo": {
+                "tournamentId": "integer,id",
+                "roundType": "integer,比赛阶段： 0-小组赛、1-淘汰赛、2-其他",
+                "seasonId": "integer,赛季类型",
+                "resource": "integer,赛事内容： 1-赛事预告、2-积分榜、3-射手榜"
+              },
+              "displayMode": "integer,显示模式（1-默认模式、2-会员价模式、3-纯图模式）",
+              "gotoInfo": {
+                "gotoType": "integer,0 – 本地； 1 – {htType==single_vip:h5跳转参数；h5Type==user_right_vip:h5会员权益跳转地址}",
+                "h5Type": "string,‘’-未选；’all_vip’-全部套餐；’single_vip’-单个套餐；’user_right_vip’-会员权益",
+                "jumpParams": "string,跳转参数或地址"
+              },
+              "jdInfo": {
+                "action": "string,拉起跳转时填入的action Intent appIntent = new Intent(action);",
+                "data": "string,拉起跳转时填入的data appIntent.setData(Uri.parse(data));"
+              },
+              "naviId": "long,导航id，当typeCode=8008时生效",
+              "logInfo": {
+                "": {
+                  "curpageid": "string,当前页面id",
+                  "curpagetype": "string,当前页面类型",
+                  "objectid": "string,内容id",
+                  "objecttype": "string,内容类型标识-typeCode",
+                  "posindex": "string,推荐位index",
+                  "columnid": "string,栏目id",
+                  "rowindex": "string,栏目index",
+                  "original": "string,媒资来源 0 运营 1 推荐 2 搜索 3 用户 4 优惠券 5 外部应用",
+                  "algid": "string,original为1推荐时相应的算法id，original为其他时此字段为空"
+                }
+              },
+              "songList": [
+                {
+                  "index": "integer,索引",
+                  "id": "long,id",
+                  "title": "string,歌曲名",
+                  "singer": [
+                    {}
+                  ],
+                  "frontPic": "string,海报",
+                  "definition": [
+                    {}
+                  ],
+                  "thirdPartySongId ": "long,第三方歌曲id，终端用此参进行播放",
+                  "scoreFlag": "integer,分数标识 1.2.3新增"
+                }
+              ],
+              "hcInfo": {},
+              "myExtInfo": {},
+              "showType": "integer,推荐位UI样式，1.2.3新增；0-模板(与模板样式保持一致) 9-个人信息 \t10-卡券相关 \t12-商品(单个商品，商品分类) \t17-全部商品 \t13-权益活动(礼包) \t14-权益海报 \t15-联系我们 \t16-已购套餐 \t20-应用版本 24-推荐套餐",
+              "jumpSubTypeCode": "string,1.2.3新增，标记会员中心媒资跳转的subtypecode，系统端内部使用",
+              "displaySource": "string,业务优先字段，系统端内部使用",
+              "aivbInfo": {
+                "performer": "string,表演者，多个表演者用“,”隔开",
+                "providerId": "string,推荐位媒资的提供方,  50001  - 蜻蜓",
+                "sourceId ": "string,媒资内容源Id",
+                "activityInfo": {
+                  "abilityIcon": "string,技能图标",
+                  "voiceExamples": [
+                    {}
+                  ]
+                }
+              },
+              "webGameInfo": {
+                "tags": [
+                  {}
+                ]
+              }
+            }
+          ],
+          "algId": "string,智能推荐栏目算法ID",
+          "moreInfo": {},
+          "columnBackImage": "string,栏目背景图",
+          "isVodVip": "integer,是否VOD VIP栏目（0-否；1-是） 如果是，则终端会对已购用户强制替换前面三个推荐位数据为VOD已购套餐",
+          "backColor1": "string,栏目背景色-渐变色1（本版本仅适用于京东栏目）",
+          "backColor2": "string,栏目背景色-渐变色2（本版本仅适用于京东栏目）",
+          "orientation": "integer,栏目自定义模板样式， 1-横向 从左到右，2-纵向 从上到下",
+          "colMaxSize": "integer,自定义模板：orientation =1时栏目宽度，orientation =2时栏目高度",
+          "templateGroup": "string,栏目组合模板",
+          "isShowPubdate": "integer,是否显示期数(0-否，1-是)",
+          "isShowScore": "integer,是否显示评分(0-否，1-是)",
+          "isLineWrap": "boolean,栏目是否换行，默认false，1.2.3新增",
+          "colPurpose": "integer,栏目用途colPurpose为“1-付费”时，下发付费视频单片，当栏目用途为“2-单点”时，下发单点视频单片，其他资源类型不做处理。"
+        }
+      },
+      "topicPos": {
+        "": {
+          "contentBeginPos": [
+            {}
+          ],
+          "contentEndPos": [
+            {}
+          ],
+          "descBeginPos": [
+            {}
+          ],
+          "descEndPos": [
+            {}
+          ],
+          "descPicBeginPos": [
+            {}
+          ],
+          "descPicWidth": "integer,描述图片区域宽度",
+          "descPicHeight": "integer,描述图片区域高度"
+        }
+      },
+      "pics": {
+        "": {
+          "picUrls": {
+            "url": "string,图片地址",
+            "adPosId": "string,广告id"
+          },
+          "linkInfo": {
+            "": {
+              "id": "integer,id",
+              "typeCode": "string,见公共返回值typeCode说明",
+              "productCode": "string,1-影视2-教育3-购物4-应用5-游戏6-轮播7-直播 8-Launcher",
+              "H5url": "string,H5url",
+              "packageName": "string,页面名",
+              "exParam": "string,应用跳转json",
+              "appUrl": "string,appurl",
+              "md5Sign": "string,Md5签名"
+            }
+          }
+        }
+      },
+      "buttonInfo": {
+        "": {
+          "buttonText": "string,buttonText",
+          "toastInfo": "string,非跳转情况下显示文字说明",
+          "linkInfo": {
+            "": {
+              "id": "integer,id",
+              "typeCode": "string,见公共返回值typeCode说明",
+              "productCode": "string,1-影视2-教育3-购物4-应用5-游戏6-轮播7-直播 8-Launcher",
+              "H5url": "string,H5url",
+              "packageName": "string,页面名",
+              "exParam": "string,应用跳转json",
+              "appUrl": "string,appurl",
+              "md5Sign": "string,Md5签名"
+            }
+          }
+        }
+      },
+      "videoInfo": {
+        "videoUrl": "string,视频地址",
+        "videoPoster": "string,videoPoster"
+      },
+      "vipTopicInfo": {
+        "": {
+          "words": "string,会员专题提示语",
+          "guestWords": "string,会员专题游客提示语",
+          "jumpParams": "string,会员专题跳转参数"
+        }
+      },
+      "mediaTitleVisible": "integer,是否显示推荐位主标题（默认显示） 1显示，0不显示",
+      "mediaSubTitleVisible": "integer,是否显示推荐位副标题（默认显示） 1显示，0不显示",
+      "sloganVisible": "integer,Slogon是否显示，1显示，0不显示"
+    }
+  ],
+  "type": "integer,专题类型, 5-带tab专题、6-翻页专题, 0-其他 8-技能分类专题、9-专辑专题",
+  "totalCount": "integer,总个数",
+  "name": "string,父专题名称"
+}

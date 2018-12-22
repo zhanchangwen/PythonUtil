@@ -70,7 +70,7 @@ def url_response_compare(urlA,urlB):
     json_compare(jsonA,jsonB,'/')
 
 def url_check(url):
-    urlB=url.replace('10.18.217.220','home-launcher-old.hismarttv.com')
+    urlB=url.replace('home-launcher.hismarttv.com','10.18.217.220')
     url_response_compare(url,urlB)
 
 if __name__ == '__main__':

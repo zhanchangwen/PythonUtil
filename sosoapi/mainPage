@@ -85,7 +85,8 @@
                   "caroSource": "integer,轮播内容来源方式，0-轮播窗口(运营配置)  1-聚看点(猜你喜欢接口，top20)",
                   "caroPlainText": "integer,是否纯文本，默认否，0-否 1-是",
                   "topHotVisible": "integer,控制近期热点是否展示，默认否，当该值为1时，显示，其他情况均不显示；1.2.2新增",
-                  "caroMaskMapSource": "integer,1，取推荐位大海报tile.showInfo.frontPic遍历存放到carousel.tile.[i].showInfo.frontPic；默认0"
+                  "caroMaskMapSource": "integer,1，取推荐位大海报tile.showInfo.frontPic遍历存放到carousel.tile.[i].showInfo.frontPic；默认0",
+                  "bgPic": "string,背景海报"
                 },
                 "appInfo": {
                   "appIcon": "string,应用或游戏icon",
@@ -95,11 +96,30 @@
                   "appUrl": "string,h5跳转url",
                   "md5Sign": "long,套餐id",
                   "versionCode": "long,版本code",
-                  "categoryName": "string,应用分类,UI没有展示需确认"
+                  "categoryName": "string,应用分类,UI没有展示需确认",
+                  "tagInfo": [
+                    {
+                      "tagId": "integer,id",
+                      "tagName": "string,name"
+                    }
+                  ],
+                  "appRelatedPics": [
+                    {}
+                  ],
+                  "controlModeLi": [
+                    {
+                      "controlModeId": "integer,id",
+                      "controlName": "string,name"
+                    }
+                  ]
                 },
                 "goodsInfo": {
                   "marketPrice": "long,原价，单位为厘",
-                  "sellPercent": "string,商品已售百分比，不带%"
+                  "sellPercent": "string,商品已售百分比，不带%",
+                  "objectSn": "string,商品号",
+                  "saleMode": "integer,是否电话购物",
+                  "serviceTelephone": "string,订购电话",
+                  "picture": "string,商品海报图"
                 },
                 "vodInfo": {
                   "doubanScore": "string,豆瓣评分",
@@ -118,7 +138,12 @@
                   "cardDesc": "string,点卡描述图片",
                   "episodeIndex": "integer,海报跳转视频的集数",
                   "timeLength": "integer,时长",
-                  "is_fee": "integer,是否付费，1-付费 0-不付费"
+                  "is_fee": "integer,是否付费，1-付费 0-不付费",
+                  "childCategory": [
+                    {}
+                  ],
+                  "pubdate": "string,发布日期",
+                  "country": "string,国家"
                 },
                 "mvodInfo": {
                   "thirdChannelId": "string,手机聚好看直播频道第三方频道",
@@ -142,7 +167,8 @@
                 "eduInfo": {
                   "total": "integer,总集数",
                   "current": "integer,当前集数",
-                  "updateMark": "string,更新至第XX集"
+                  "updateMark": "string,更新至第XX集",
+                  "imagePostUrlNew": "string,遮挡图海报"
                 },
                 "carousel": [
                   {}
@@ -259,6 +285,11 @@
                       {}
                     ]
                   }
+                },
+                "webGameInfo": {
+                  "tags": [
+                    {}
+                  ]
                 }
               }
             ],
@@ -280,14 +311,17 @@
           "chanFocusIconImage": "string,频道图标焦点图",
           "chanLeftIconImage": "string,频道图标遗留图",
           "isSmartChannel": "integer,是否配置栏目池 0-否 1-是  默认0",
-          "chanUrl": "string,频道跳转地址"
+          "chanUrl": "string,频道跳转地址",
+          "chanBackImage": "string,频道背景图-v1.2.5",
+          "chanBackColour1": "string,频道背景色1-v1.2.5",
+          "chanBackColour2": "string,频道背景色1-v1.2.5",
+          "chanStyle": "integer,主题 1-白色底黑字，2-深色底白字-v1.2.5"
         }
       ],
       "hasSideBar": "integer,标识该tab下是否有sidebar，1标识存在，0标识不存在",
       "adPosId": "string,如果此TAB有广告下发此字段",
       "chanBackImage": "string,频道背景图（专用于“频道”中的独家频道）",
       "chanDefaultBackImage": "string,频道留白背景图（专用于“频道”中的独家频道）",
-      "channelId": "long,轮播频道ID（专用于“频道”中的独家频道）",
       "channel": {},
       "naviHeaderImage": "string,刘海背景图",
       "naviHeaderColour": "string,刘海背景色",
@@ -318,7 +352,8 @@
         "name": "string,聚好学频道名称",
         "icon": "string,聚好学频道图标"
       }
-    ]
+    ],
+    "isShowLivePlay": "integer,轮播插件首页开关，0：代表开关打开，此时显示首页全部内容，1：关闭，只显示背景图;取不到值默认为0"
   },
   "channelrequestid": "string,曝光日志用"
 }

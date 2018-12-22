@@ -38,14 +38,23 @@ def check_json_ergodic(obj,objStruct,prefix):
                 if len(obj[item])>0:                        
                     if isinstance(obj[item][0],dict):
                         if isinstance(objStruct[item],dict):
-                            #print "ergodic test array:"+item
-                            i=0
-                            for subitem in obj[item]:
-                                copyStruct=copy_json(objStruct[item])
-                                check_json_ergodic(subitem,copyStruct,prefix+item+'/'+str(i)+'/')
-                                i=i+1
-                            del objStruct[item]
-                            #print "ergodic test array:%s finished" % item
+                            #dict包含''字段
+                            if '' in objStruct[item]:
+                                copyStruct=copy_json(objStruct[item][''])
+                                i=0
+                                for subitem in obj[item]:
+                                    check_json_ergodic(subitem,copyStruct,prefix+item+'/'+str(i)+'/')
+                                    i=i+1
+                                del objStruct[item]['']
+                            else:
+                                #print "ergodic test array:"+item
+                                i=0
+                                for subitem in obj[item]:
+                                    copyStruct=copy_json(objStruct[item])
+                                    check_json_ergodic(subitem,copyStruct,prefix+item+'/'+str(i)+'/')
+                                    i=i+1
+                                del objStruct[item]
+                                #print "ergodic test array:%s finished" % item
                         elif isinstance(objStruct[item],list) and len(objStruct[item])>0 and isinstance(objStruct[item][0],dict):
                             #print "ergodic test array:"+item
                             i=0
