@@ -5,18 +5,19 @@ import requests
 import re
 import sys
 def copy_json(source):
-    if isinstance(source,list):
-        target=[]
-        length=len(source)
-        for i in range(0,length):
-            target.append(copy_json(source[i]))
-    elif isinstance(source,dict):
-        target={}
-        for item in source:
-            target[item]=copy_json(source[item])
-    else:
-        target=source
-    return target
+    return json.loads(json.dumps(source))
+    #if isinstance(source,list):
+    #    target=[]
+    #    length=len(source)
+    #    for i in range(0,length):
+    #        target.append(copy_json(source[i]))
+    #elif isinstance(source,dict):
+    #    target={}
+    #    for item in source:
+    #        target[item]=copy_json(source[item])
+    #else:
+    #    target=source
+    #return target
 
 
 def check_json_ergodic(obj,objStruct,prefix):
@@ -40,9 +41,9 @@ def check_json_ergodic(obj,objStruct,prefix):
                         if isinstance(objStruct[item],dict):
                             #dict包含''字段
                             if '' in objStruct[item]:
-                                copyStruct=copy_json(objStruct[item][''])
                                 i=0
                                 for subitem in obj[item]:
+                                    copyStruct=copy_json(objStruct[item][''])
                                     check_json_ergodic(subitem,copyStruct,prefix+item+'/'+str(i)+'/')
                                     i=i+1
                                 del objStruct[item]['']
@@ -107,6 +108,8 @@ def check_json_ergodic(obj,objStruct,prefix):
     for item in objStruct:
         if isinstance(objStruct[item],str) or isinstance(objStruct[item],unicode):
             print "漏下发字段：\t"+prefix+item+"\t"+objStruct[item]
+        else:
+            print "漏下发字段：\t"+prefix+item+"\t"+json.dumps(objStruct[item]).decode('unicode_escape')
 
 def check_url(url):
     #获取url的接口名
