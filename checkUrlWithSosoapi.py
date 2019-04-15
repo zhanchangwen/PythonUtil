@@ -28,7 +28,7 @@ def check_json_ergodic(obj,objStruct,prefix):
         if item in objStruct:
             #存在bug，暂时规避
             if obj[item] == None:
-                print item+"返回None"
+                print prefix+item+"返回None"
                 continue
             #item在objStruct中
             #如果值是非空数组对象且元素为dict类型，递归回调方法check_json_ergodic
@@ -39,22 +39,26 @@ def check_json_ergodic(obj,objStruct,prefix):
                     if isinstance(obj[item][0],dict):
                         if isinstance(objStruct[item],dict):
                             #print "ergodic test array:"+item
+                            i=0
                             for subitem in obj[item]:
                                 copyStruct=copy_json(objStruct[item])
-                                check_json_ergodic(subitem,copyStruct,prefix+item+'/')
+                                check_json_ergodic(subitem,copyStruct,prefix+item+'/'+str(i)+'/')
+                                i=i+1
                             del objStruct[item]
                             #print "ergodic test array:%s finished" % item
                         elif isinstance(objStruct[item],list) and len(objStruct[item])>0 and isinstance(objStruct[item][0],dict):
                             #print "ergodic test array:"+item
+                            i=0
                             for subitem in obj[item]:
                                 copyStruct=copy_json(objStruct[item][0])
-                                check_json_ergodic(subitem,copyStruct,prefix+item+'/')
+                                check_json_ergodic(subitem,copyStruct,prefix+item+'/'+str(i)+'/')
+                                i=i+1
                             del objStruct[item][0]
                             #print "ergodic test array:%s finished" % prefix+item
                         else:
-                            print "无法递归测试数组"+prefix+item
+                            print "无法递归测试数组:"+prefix+item
                     else:
-                        print "%s 数组元素非对象为%s" % prefix+item
+                        print "数组元素非对象:"+ prefix+item
                 else:
                     print item+"数组为空"
                 #del objStruct[item]
@@ -81,14 +85,29 @@ def check_json_ergodic(obj,objStruct,prefix):
                     if matchIntObj == None and matchLongObj == None:
                         print "!!!"+prefix+item+" = "+str(obj[item])+"(int or long),But sosoapi:"+objStruct[item]
                 del objStruct[item]
+            elif isinstance(obj[item],float):
+                #print "integer"+item
+                matchIntObj = re.match(r'double',objStruct[item],re.I)
+                matchLongObj = re.match(r'float',objStruct[item],re.I)
+                matchBooleanObj = re.match(r'boolean',objStruct[item],re.I)
+                if matchBooleanObj:
+                    if obj[item] not in [0,1]:
+                        print "!!!"+prefix+item+" = "+str(obj[item])+"(double or float),But sosoapi:"+objStruct[item]
+                else:
+                    if matchIntObj == None and matchLongObj == None:
+                        print "!!!"+prefix+item+" = "+str(obj[item])+"(double or float),But sosoapi:"+objStruct[item]
+                del objStruct[item]
             elif isinstance(obj[item],str) or isinstance(obj[item],unicode):
-                #print "string:"+item
-                matchObj = re.match(r'string',objStruct[item],re.I)
-                if matchObj == None:
-                    print "!!!"+prefix+item+" = "+str(obj[item])+"(string),But sosoapi:"+objStruct[item]
+                #print "string:"+prefix+item
+                #matchObj = re.match(r'string',objStruct[item],re.I)
+                if isinstance(objStruct[item],str) or isinstance(objStruct[item],unicode):
+                    if 'string' not in objStruct[item]:
+                        print "!!!"+prefix+item+" = "+str(obj[item])+"(string),But sosoapi:"+objStruct[item]+"======"
+                else:
+                    print "!!!"+prefix+item+"下发类型不一致"
                 del objStruct[item]
             else:
-                print "!!! "+prefix+item+"类型为"+type(obj[item])+",请在工具中补充"
+                print "!!! "+prefix+item+"类型为"+str(type(obj[item]))+",请在工具中补充"
         else:
             print "!!! "+prefix+item+"字段未在sosoapi中录入" 
     for item in objStruct:
