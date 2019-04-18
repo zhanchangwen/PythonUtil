@@ -1,0 +1,32 @@
+{
+    "tileDetail":{
+      "id": "long,媒资id",
+      "showInfo": {
+        "title": "string,主标题",
+        "frontPic": "string,海报",
+        "subTitle": "string,副标题",
+        "desc": "string,简介",
+        "frontPicSmall": "string,小海报"
+      },
+      "aivbInfo": {
+        "activityInfo": {
+          "abilityIcon": "string,技能图标",
+          "activityAuth": "string,技能提供者",
+          "arousalAtyMethod": "string,唤醒技能方法的描述，如“你可以这样查询天气”",
+          "activityDesc": "string,技能介绍",
+          "voiceExamples": [
+            "string,示例"
+          ]
+        }
+      },
+      "webGameInfo": {
+        "tags": [
+          "string,标签图片url"
+        ],
+        "screenShots": [
+          "string,截图url"
+        ]
+      },
+      "h5Url": "string,小游戏url"
+    }
+}
